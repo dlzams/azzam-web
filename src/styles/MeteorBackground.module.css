@@ -1,0 +1,40 @@
+/* src/styles/MeteorBackground.module.css */
+.background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw; /* Pastikan mengisi seluruh lebar viewport */
+  height: 100vh; /* Pastikan mengisi seluruh tinggi viewport */
+  overflow: hidden;
+  z-index: -1; /* Agar berada di bawah semua elemen lainnya */
+  background-color: #000; /* Warna background hitam */
+}
+
+.meteor {
+  position: absolute;
+  top: -50px;
+  left: -50px;
+  width: 4px;
+  height: 100px;
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 1),
+    rgba(255, 255, 255, 0)
+  );
+  transform: rotate(45deg);
+  animation: fall 3s linear infinite;
+}
+
+/* Animasi jatuh */
+@keyframes fall {
+  0% {
+    top: -50px;
+    left: calc(100% * var(--x-start, 0.1)); /* Posisi acak */
+    opacity: 1;
+  }
+  100% {
+    top: 110%;
+    left: calc(100% * var(--x-end, 0.9)); /* Posisi acak di bagian bawah */
+    opacity: 0;
+  }
+}
