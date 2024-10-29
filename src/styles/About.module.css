@@ -1,5 +1,3 @@
-/* src/styles/About.module.css */
-
 .about-section {
   background-color: #f8f9fa;
   padding: 4rem 2rem;
@@ -114,7 +112,7 @@
   }
 
   .about-description {
-    font-size: 0.6rem; /* Kurangi ukuran font deskripsi */
+    font-size: 0.95rem; /* Kurangi ukuran font deskripsi */
     text-align: justify; /* Tetap rata kanan-kiri pada mobile */
   }
 
