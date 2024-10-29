@@ -379,7 +379,7 @@ const certificationsData = [
 const Certifications = () => {
   return (
     <section className={styles.certificationsSection}>
-      <h2 className={styles.sectionTitle}>Sertifikasi</h2>
+      <h2 className={styles.sectionTitle}>Certifications</h2>
       <div className={styles.certificationGrid}>
         {certificationsData.map((cert, index) => (
           <div className={styles.certificationCard} key={index}>
