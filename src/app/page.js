@@ -6,8 +6,12 @@ import Projects from "../components/Projects";
 export default function HomePage() {
   return (
     <main>
-      <HeroSection /> {/* HeroSection hanya muncul di halaman utama */}
-      <Experiences />
+      <section id="hero">
+        <HeroSection /> {/* HeroSection hanya muncul di halaman utama */}
+      </section>
+      <section id="experiences">
+        <Experiences />
+      </section>
       <Projects />
     </main>
   );

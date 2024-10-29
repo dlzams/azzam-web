@@ -1,24 +1,27 @@
 /* src/styles/Navbar.module.css */
+
 .navbar {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
-  width: 100%; /* Pastikan lebar navbar penuh */
-  z-index: 10;
+  width: 100%;
+  z-index: 1000;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0.5rem 2rem;
   background-color: #f8f9fa;
-  box-sizing: border-box; /* Pastikan padding tidak memengaruhi lebar */
+  box-sizing: border-box;
 }
 
+/* Style untuk logo */
 .logo {
   font-size: 2rem;
   font-weight: 600;
   color: #333;
 }
 
+/* Style untuk navigasi links */
 .navLinks {
   list-style: none;
   display: flex;
@@ -26,6 +29,7 @@
   font-size: 1.3rem;
 }
 
+/* Style untuk link */
 .navLinks li a {
   color: #333;
   text-decoration: none;
@@ -39,27 +43,120 @@
   content: "";
   position: absolute;
   left: 0;
-  bottom: -5px; /* Jarak garis dengan teks */
+  bottom: -5px;
   width: 0;
   height: 2px;
-  background-color: #1e90ff; /* Warna biru */
-  transition: width 0.3s ease-in-out; /* Efek smooth */
+  background-color: #1e90ff;
+  transition: width 0.3s ease-in-out;
 }
 
 /* Saat di-hover */
 .navLinks li a:hover {
-  color: #1e90ff; /* Warna teks berubah */
+  color: #1e90ff;
 }
 
 .navLinks li a:hover::after {
-  width: 100%; /* Garis penuh */
+  width: 100%;
+}
+
+/* Style untuk dropdown "Others" */
+.others {
+  position: relative;
+}
+
+.dropdownToggle {
+  cursor: pointer;
+  color: #1e90ff;
+}
+
+/* Style untuk dropdown menu */
+.dropdownMenu {
+  position: absolute;
+  top: 30px; /* Jarak dari menu utama */
+  right: 0; /* Geser dropdown sepenuhnya ke kiri */
+  background-color: #fff;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  min-width: 200px;
+  z-index: 10;
+}
+
+.dropdownMenu a {
+  color: #333;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.dropdownMenu a:hover {
+  background-color: #f0f0f0;
+}
+
+/* Style untuk hamburger menu */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.bar {
+  height: 3px;
+  width: 25px;
+  background-color: #333;
+  margin: 4px 0;
+  transition: 0.4s;
+}
+
+.change {
+  background-color: #1e90ff;
 }
 
 /* Media query untuk layar di bawah 768px */
 @media (max-width: 768px) {
   .navLinks {
+    display: none;
     flex-direction: column;
     gap: 1rem;
     padding: 1rem 0;
+    background-color: #f8f9fa;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    transition: max-height 0.5s ease;
+    max-height: 0;
+    overflow: hidden;
+  }
+
+  .navLinks.active {
+    display: flex;
+    max-height: 300px;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  /* Dropdown menu pada layar kecil */
+  .dropdownMenu {
+    position: absolute;
+    top: 30px; /* Jarak dari menu utama */
+    right: 0;
+    background-color: #fff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    min-width: 200px;
+    z-index: 10;
+  }
+
+  .dropdownMenu a {
+    padding: 1rem;
   }
 }

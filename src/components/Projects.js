@@ -6,27 +6,45 @@ const projects = [
   {
     title: "Website for Business Startup for Used and New Cars Sell",
     description: "Built with Laravel, TailwindCSS, and Firebase",
-    imageUrl: "/project1.jpg",
-    caption: "BaroCars Website-Based", // Caption singkat
+    imageUrl: "/abpweb.jpg",
+    caption: "BaroCars Website-Based",
   },
   {
     title: "Project 2",
     description: "A short description of project 2",
-    imageUrl: "/project2.jpg",
-    caption: "Project 2 - E-commerce Platform",
+    imageUrl: "/sereluna.jpg",
+    caption: "SereLuna Mobile-Based using AI",
   },
   {
     title: "Project 3",
     description: "A short description of project 3",
     imageUrl: "/project3.jpg",
-    caption: "Project 3 - Data Visualization",
+    caption: "AquaFlow Innovillage IoT-Based",
+  },
+  {
+    title: "Project 3",
+    description: "A short description of project 3",
+    imageUrl: "/strukdat.jpg",
+    caption: "Data Structure - Implement Double Linked List",
+  },
+  {
+    title: "Project 3",
+    description: "A short description of project 3",
+    imageUrl: "/blockchain.jpg",
+    caption: "Blockchain Mining System",
+  },
+  {
+    title: "Project 3",
+    description: "A short description of project 3",
+    imageUrl: "/cnnimages.jpg",
+    caption: "CNN Images Classification using Cats-Dogs Dataset",
   },
 ];
 
 const Projects = () => {
   return (
     <section id="projects" className={styles.projects}>
-      <h2 className={styles.title}>Projects</h2>
+      <h2 className={styles.title}>My Projects</h2>
       <div className={styles.grid}>
         {projects.map((project, index) => (
           <div key={index} className={styles.card}>

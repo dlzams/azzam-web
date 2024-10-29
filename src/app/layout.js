@@ -1,6 +1,8 @@
 // src/app/layout.js
 import localFont from "next/font/local";
 import Navbar from "../components/Navbar";
+import ScrollToTop from "../components/ScrollToTop";
+import LastUpdate from "../components/LastUpdate";
 import MeteorBackground from "../components/MeteorBackground"; // Import MeteorBackground
 import "../styles/globals.css"; // Import CSS global
 
@@ -23,9 +25,13 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body>
-        <Navbar /> {/* Navbar tetap di atas animasi */}
-        <main>{children}</main> {/* Konten halaman */}
+      <body style={{ paddingTop: "60px" }}>
+        {" "}
+        {/* Sesuaikan padding-top */}
+        <Navbar />
+        <main>{children}</main>
+        <ScrollToTop />
+        <LastUpdate />
       </body>
     </html>
   );

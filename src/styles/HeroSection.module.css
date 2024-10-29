@@ -1,13 +1,13 @@
 .heroSection {
-  padding-top: 80px; /* Menjaga padding atas */
+  padding-top: 60px; /* Menjaga padding atas */
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 3rem 2rem;
+  padding: 1rem 2rem;
   position: relative;
   overflow: hidden; /* Agar partikel tidak keluar dari section */
   background-color: #f8f9fa; /* Warna latar belakang */
-  min-height: 75vh; /* Tinggi minimum section */
+  min-height: 100vh; /* Tinggi minimum section */
 }
 
 .particle {
@@ -63,8 +63,9 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
-  max-width: 800px;
+  max-width: 900px;
   padding: 4rem;
+  padding-top: 0rem;
   border-radius: 10px;
   background-color: #f8f9fa; /* Latar belakang semi-transparan */
 }
@@ -124,7 +125,7 @@
   font-size: 1.2rem;
   color: #555; /* Abu gelap */
   line-height: 1.8;
-  margin-bottom: 2rem;
+  margin-bottom: 3.5rem;
 }
 
 .heroButton {

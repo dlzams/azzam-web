@@ -1,0 +1,39 @@
+/* src/styles/ScrollToTop.module.css */
+
+.scrollToTop {
+  position: fixed;
+  bottom: 20px; /* Jarak dari bawah */
+  right: 20px; /* Jarak dari kanan */
+  width: 45px;
+  height: 45px;
+  background-color: #333; /* Warna abu-abu gelap */
+  color: #f5f5f5; /* Warna putih untuk ikon */
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 22px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3); /* Bayangan */
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(20px); /* Slide ke bawah saat disembunyikan */
+}
+
+.scrollToTop.visible {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0); /* Slide ke posisi semula */
+  transition: opacity 0.3s ease, transform 0.3s ease; /* Transisi untuk kemunculan */
+}
+
+.scrollToTop:hover {
+  background-color: #555; /* Sedikit lebih terang saat di-hover */
+  transform: scale(1.05); /* Sedikit zoom saat di-hover */
+}
+
+.scrollToTop::before {
+  content: "↑"; /* Panah minimalis */
+}

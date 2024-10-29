@@ -1,0 +1,24 @@
+/* src/styles/LastUpdate.module.css */
+
+.lastUpdate {
+  position: fixed;
+  bottom: 20px; /* Jarak dari bawah */
+  left: 20px; /* Jarak dari kiri */
+  background-color: #333; /* Warna abu-abu gelap */
+  color: #f5f5f5; /* Warna teks putih */
+  padding: 8px 12px;
+  font-size: 10px;
+  font-weight: bold;
+  border-radius: 5px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3); /* Bayangan */
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  opacity: 0.8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.lastUpdate:hover {
+  opacity: 1;
+  transform: scale(1.05); /* Zoom-in saat di-hover */
+}

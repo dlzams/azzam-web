@@ -21,7 +21,7 @@ const HeroSection = () => {
             document
               .querySelector(`.${styles.animateText}`)
               .classList.add(styles.fadeIn);
-          }, 100); // Waktu menunggu sebelum mengubah teks
+          }, 250); // Waktu menunggu sebelum mengubah teks
           return "Azzam";
         } else {
           document
@@ -41,7 +41,7 @@ const HeroSection = () => {
           return "Muhammad Abdullah Azzam";
         }
       });
-    }, 500); // ganti waktunya
+    }, 1500); // ganti waktunya
 
     return () => clearInterval(intervalId);
   }, []);
@@ -72,9 +72,9 @@ const HeroSection = () => {
         <div className={styles.description}>
           <h1 className={styles.animateText}>{displayText}</h1>
           <p>
-            Professional [Job Title] specialized in [Specialization]. Passionate
-            about delivering high-quality solutions and creating impactful
-            digital experiences.
+            YPT Telkom University Scholarship Awardee & final-year Computer
+            Science student specializing in Security Analysis, Machine Learning,
+            Deep Learning, Data Analysis, and Front-End Web Development.
           </p>
         </div>
         <button className={styles.heroButton}>Contact Me →</button>
