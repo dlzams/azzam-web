@@ -5,7 +5,14 @@ import styles from "../styles/Projects.module.css";
 
 const projects = [
   {
-    title: "Website for Business Startup for Used and New Cars Sell",
+    title: "Project 3",
+    description: "A short description of project 3",
+    imageUrl: "/project3.jpg",
+    caption: "AquaFlow Innovillage IoT-Based",
+    internalUrl: "/aquaflow",
+  },
+  {
+    title: "Car Marketplace for New & Used Cars",
     description: "Built with Laravel, TailwindCSS, and Firebase",
     imageUrl: "/abpweb.jpg",
     caption: "BaroCars Website-Based",
@@ -17,13 +24,6 @@ const projects = [
     imageUrl: "/sereluna.jpg",
     caption: "SereLuna Mobile-Based using AI",
     url: "https://github.com/dlzams/SereLunaApp",
-  },
-  {
-    title: "Project 3",
-    description: "A short description of project 3",
-    imageUrl: "/project3.jpg",
-    caption: "AquaFlow Innovillage IoT-Based",
-    internalUrl: "/aquaflow",
   },
   {
     title: "Project 3",

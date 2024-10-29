@@ -1,0 +1,90 @@
+.certificationsSection {
+  padding: 4rem 2rem;
+  background-color: #f8f9fa; /* Warna abu muda untuk kontras */
+}
+
+.sectionTitle {
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #333; /* Warna gelap */
+}
+
+.certificationGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Maksimal 4 kolom dalam 1 baris */
+  column-gap: 0.5rem; /* Mengatur jarak antar card di kanan-kiri */
+  row-gap: 2rem; /* Mengatur jarak antar card di atas-bawah */
+  justify-items: center;
+}
+
+/* Responsivitas untuk tablet */
+@media (max-width: 1024px) {
+  .certificationGrid {
+    grid-template-columns: repeat(2, 1fr); /* 2 kolom untuk tablet */
+  }
+}
+
+/* Responsivitas untuk ponsel */
+@media (max-width: 600px) {
+  .certificationGrid {
+    grid-template-columns: 1fr; /* 1 kolom untuk ponsel */
+    gap: 1.5rem;
+  }
+}
+
+.certificationCard {
+  background-color: #ffffff;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+  border-radius: 8px;
+  overflow: hidden;
+  text-align: left;
+  padding: 1.5rem;
+  transition: transform 0.3s ease;
+  max-width: 300px;
+  display: flex;
+  flex-direction: column; /* Membuat layout vertikal */
+}
+
+.certificationCard:hover {
+  transform: translateY(-5px); /* Efek hover */
+}
+
+.certificateImage {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 4px;
+  max-height: 200px;
+}
+
+.certificateTitle {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin: 0.9rem 0;
+  color: #333;
+}
+
+.certificateDescription {
+  font-size: 1rem;
+  color: #555;
+  margin: 0.5rem 0;
+  text-align: left;
+  list-style-type: disc;
+  padding-left: 1.5rem;
+  margin-top: auto; /* Memastikan jarak konsisten antara deskripsi dan bagian credential */
+}
+
+.certificateLink {
+  display: inline-block;
+  margin-top: 1.5rem; /* Jarak ekstra agar credential tetap di bawah */
+  color: #2c3b4b;
+  text-decoration: none;
+  font-weight: bold;
+  text-align: left;
+}
+
+.certificateLink:hover {
+  text-decoration: underline;
+}

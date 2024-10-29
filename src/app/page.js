@@ -4,6 +4,7 @@ import HeroSection from "../components/HeroSection";
 import About from "../components/About";
 import Experiences from "../components/Experiences";
 import Projects from "../components/Projects";
+import Certifications from "@/components/Certifications";
 
 export default function HomePage() {
   return (
@@ -18,7 +19,12 @@ export default function HomePage() {
       <section id="experiences">
         <Experiences />
       </section>
-      <Projects />
+      <section id="projects">
+        <Projects />
+      </section>
+      <section id="certifications">
+        <Certifications />
+      </section>
     </main>
   );
 }
