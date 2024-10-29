@@ -1,0 +1,130 @@
+/* src/styles/About.module.css */
+
+.about-section {
+  background-color: #f8f9fa;
+  padding: 4rem 2rem;
+  display: flex;
+  justify-content: center;
+  min-height: 75vh;
+}
+
+.about-container {
+  display: flex;
+  flex-direction: row;
+  max-width: 1200px;
+  width: 100%;
+  gap: 2rem;
+  align-items: flex-start;
+}
+
+/* Left Side: Image */
+.about-image-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.about-image {
+  border-radius: 30px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  object-fit: cover;
+  width: 100%; /* Mengatur lebar penuh agar responsif */
+  height: auto; /* Mengatur tinggi otomatis untuk mempertahankan rasio */
+}
+
+/* Right Side: Content */
+.about-content {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.about-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #333;
+  margin-top: 0.5rem;
+}
+
+.about-description {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #555;
+  text-align: justify;
+}
+
+/* Skills Section */
+.about-skills {
+  margin-top: 2rem;
+  padding-top: 1rem;
+  border-top: 1px solid #ddd;
+}
+
+.skills-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.skills-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.skills-list li {
+  padding: 1rem;
+  background-color: #e0e4e8;
+  border-radius: 5px;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.05);
+  text-align: left;
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Responsif untuk perangkat mobile */
+@media (max-width: 768px) {
+  .about-container {
+    flex-direction: column; /* Ubah ke kolom vertikal */
+    align-items: center;
+    text-align: center;
+  }
+
+  .about-image-container {
+    width: 100%; /* Pastikan gambar penuh lebar pada layar kecil */
+    margin-bottom: 1.5rem; /* Tambahkan margin bawah agar lebih rapi */
+  }
+
+  .about-image {
+    width: 80%; /* Kurangi ukuran gambar di perangkat kecil untuk proporsi */
+    max-width: 300px;
+    height: auto;
+  }
+
+  .about-content {
+    align-items: center;
+  }
+
+  .about-title {
+    font-size: 2rem; /* Kurangi ukuran font judul pada layar kecil */
+  }
+
+  .about-description {
+    font-size: 0.95rem; /* Kurangi ukuran font deskripsi */
+    text-align: justify; /* Tetap rata kanan-kiri pada mobile */
+  }
+
+  .skills-list {
+    grid-template-columns: 1fr; /* Atur grid menjadi satu kolom */
+    gap: 0.5rem; /* Kurangi gap antar skill pada layar kecil */
+  }
+
+  .skills-list li {
+    font-size: 0.95rem; /* Kurangi ukuran font pada layar kecil */
+    padding: 0.8rem;
+  }
+}

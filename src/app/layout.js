@@ -28,7 +28,6 @@ export default function RootLayout({ children }) {
       <body style={{ paddingTop: "60px" }}>
         {" "}
         {/* Sesuaikan padding-top */}
-        <Navbar />
         <main>{children}</main>
         <ScrollToTop />
         <LastUpdate />

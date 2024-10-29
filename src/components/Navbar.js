@@ -2,6 +2,7 @@
 "use client"; // Tambahkan ini
 
 import { useState } from "react";
+import Link from "next/link"; // Import Link dari next/link
 import styles from "../styles/Navbar.module.css";
 
 const Navbar = () => {
@@ -18,12 +19,17 @@ const Navbar = () => {
 
   return (
     <nav className={styles.navbar}>
-      <div className={styles.logo}>MyPortfolio 🎮</div>
+      {/* Logo with Link to Homepage */}
+      <Link href="/" passHref legacyBehavior>
+        <a className={styles.logo}>MyPortfolio 🎮</a>
+      </Link>
+
       <div className={styles.hamburger} onClick={toggleMenu}>
         <span className={`${styles.bar} ${isOpen ? styles.change : ""}`}></span>
         <span className={`${styles.bar} ${isOpen ? styles.change : ""}`}></span>
         <span className={`${styles.bar} ${isOpen ? styles.change : ""}`}></span>
       </div>
+
       <ul className={`${styles.navLinks} ${isOpen ? styles.active : ""}`}>
         <li>
           <a href="#about">About</a>
@@ -38,7 +44,11 @@ const Navbar = () => {
           <a href="#certifications">Certifications</a>
         </li>
         <li className={styles.others} onClick={toggleOthersMenu}>
-          <a href="#!" className={styles.dropdownToggle}>
+          <a
+            href="#"
+            onClick={(e) => e.preventDefault()} // Mencegah perilaku default agar "#" tidak muncul di URL
+            className={styles.dropdownToggle}
+          >
             Others
           </a>
           {isOthersOpen && (

@@ -19,6 +19,12 @@
   font-size: 2rem;
   font-weight: 600;
   color: #333;
+  text-decoration: none; /* Menghapus garis bawah */
+  border-bottom: none; /* Menghapus border bawah jika ada */
+}
+
+.logo:hover {
+  text-decoration: none; /* Pastikan garis bawah tetap hilang saat di-hover */
 }
 
 /* Style untuk navigasi links */

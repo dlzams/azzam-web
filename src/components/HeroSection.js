@@ -1,47 +1,43 @@
 "use client";
 
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import styles from "../styles/HeroSection.module.css";
 
 const HeroSection = () => {
   const [displayText, setDisplayText] = useState("Muhammad Abdullah Azzam");
+  const textRef = useRef(null); // Menyimpan referensi ke elemen animasi teks
 
   useEffect(() => {
     const intervalId = setInterval(() => {
-      setDisplayText((prev) => {
-        // Menangani kelas untuk animasi fade
-        if (prev === "Muhammad Abdullah Azzam") {
-          document
-            .querySelector(`.${styles.animateText}`)
-            .classList.add(styles.fadeOut);
-          setTimeout(() => {
-            document
-              .querySelector(`.${styles.animateText}`)
-              .classList.remove(styles.fadeOut);
-            document
-              .querySelector(`.${styles.animateText}`)
-              .classList.add(styles.fadeIn);
-          }, 250); // Waktu menunggu sebelum mengubah teks
-          return "Azzam";
-        } else {
-          document
-            .querySelector(`.${styles.animateText}`)
-            .classList.remove(styles.fadeIn);
-          document
-            .querySelector(`.${styles.animateText}`)
-            .classList.add(styles.fadeOut);
-          setTimeout(() => {
-            document
-              .querySelector(`.${styles.animateText}`)
-              .classList.remove(styles.fadeOut);
-            document
-              .querySelector(`.${styles.animateText}`)
-              .classList.add(styles.fadeIn);
-          }, 500);
-          return "Muhammad Abdullah Azzam";
+      // Menambahkan kelas fadeOut sebelum mengganti teks
+      if (textRef.current) {
+        textRef.current.classList.add(styles.fadeOut);
+      }
+
+      // Ganti teks setelah animasi fadeOut selesai (250 ms)
+      const timeoutId = setTimeout(() => {
+        setDisplayText((prev) =>
+          prev === "Muhammad Abdullah Azzam"
+            ? "Azzam"
+            : "Muhammad Abdullah Azzam"
+        );
+
+        // Setelah teks diganti, tambahkan kelas fadeIn
+        if (textRef.current) {
+          textRef.current.classList.remove(styles.fadeOut);
+          textRef.current.classList.add(styles.fadeIn);
         }
-      });
-    }, 1500); // ganti waktunya
+
+        // Hapus kelas fadeIn setelah beberapa waktu untuk persiapan animasi berikutnya
+        setTimeout(() => {
+          if (textRef.current) {
+            textRef.current.classList.remove(styles.fadeIn);
+          }
+        }, 500);
+      }, 250);
+
+      return () => clearTimeout(timeoutId);
+    }, 1500); // Ganti teks setiap 1.5 detik
 
     return () => clearInterval(intervalId);
   }, []);
@@ -70,7 +66,10 @@ const HeroSection = () => {
           </div>
         </div>
         <div className={styles.description}>
-          <h1 className={styles.animateText}>{displayText}</h1>
+          {/* Gunakan ref untuk elemen animateText */}
+          <h1 className={`${styles.animateText}`} ref={textRef}>
+            {displayText}
+          </h1>
           <p>
             YPT Telkom University Scholarship Awardee & final-year Computer
             Science student specializing in Security Analysis, Machine Learning,

@@ -1,15 +1,18 @@
+/* src/styles/HeroSection.module.css */
+
 .heroSection {
-  padding-top: 60px; /* Menjaga padding atas */
+  padding-top: 60px;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 1rem 2rem;
+  padding: 2rem;
   position: relative;
-  overflow: hidden; /* Agar partikel tidak keluar dari section */
-  background-color: #f8f9fa; /* Warna latar belakang */
-  min-height: 100vh; /* Tinggi minimum section */
+  overflow: hidden;
+  background-color: #f8f9fa;
+  min-height: 90vh;
 }
 
+/* Animasi Partikel */
 .particle {
   position: absolute;
   width: 15px;
@@ -65,23 +68,23 @@
   text-align: center;
   max-width: 900px;
   padding: 4rem;
-  padding-top: 0rem;
+  padding-top: 0;
   border-radius: 10px;
-  background-color: #f8f9fa; /* Latar belakang semi-transparan */
+  background-color: #f8f9fa;
 }
 
 .avatarImage {
-  width: 300px; /* Ukuran gambar */
+  width: 300px;
   height: 300px;
-  border-radius: 50%; /* Membuat gambar bulat */
+  border-radius: 50%;
   object-fit: cover;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Meningkatkan blur, spread, dan opacity */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
 }
 
 /* Kelas untuk flip card */
 .flipCard {
   background-color: transparent;
-  perspective: 1000px; /* Memberikan efek kedalaman */
+  perspective: 1000px;
 }
 
 .flipCardInner {
@@ -90,14 +93,10 @@
   height: 300px;
   transition: transform 0.8s;
   transform-style: preserve-3d;
-  -webkit-transition: transform 0.8s;
-  -moz-transition: transform 0.8s;
-  -ms-transition: transform 0.8s;
-  -o-transition: transform 0.8s;
 }
 
 .flipCard:hover .flipCardInner {
-  transform: rotateY(180deg); /* Flip saat hover */
+  transform: rotateY(180deg);
 }
 
 .flipCardFront,
@@ -105,25 +104,27 @@
   position: absolute;
   width: 100%;
   height: 100%;
-  backface-visibility: hidden; /* Menyembunyikan sisi belakang */
-  border-radius: 50%; /* Membuat gambar bulat */
+  backface-visibility: hidden;
+  border-radius: 50%;
   overflow: hidden;
 }
 
 .flipCardBack {
-  transform: rotateY(180deg); /* Memutar sisi belakang */
+  transform: rotateY(180deg);
 }
 
+/* Deskripsi dan Teks */
 .description h1 {
   font-size: 2.5rem;
   font-weight: 800;
-  color: #333; /* Lebih gelap untuk kontras */
+  color: #333;
   margin-bottom: 1rem;
+  min-height: 3rem; /* Menjaga tinggi tetap untuk mencegah pergeseran */
 }
 
 .description p {
   font-size: 1.2rem;
-  color: #555; /* Abu gelap */
+  color: #555;
   line-height: 1.8;
   margin-bottom: 3.5rem;
 }
@@ -132,8 +133,8 @@
   padding: 1rem 2rem;
   font-size: 1rem;
   font-weight: bold;
-  background-color: #333; /* Abu gelap untuk kesan elegan */
-  color: #f8f8f8; /* Warna teks tombol */
+  background-color: #333;
+  color: #f8f8f8;
   border: none;
   border-radius: 50px;
   cursor: pointer;
@@ -141,22 +142,55 @@
 }
 
 .heroButton:hover {
-  background-color: #555; /* Perubahan warna saat hover */
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Shadow saat hover */
+  background-color: #555;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
+/* Teks Animasi */
 .animateText {
-  font-size: 2.5rem; /* Ukuran teks */
-  font-weight: 800; /* Ketebalan teks */
-  color: #333; /* Warna teks */
-  transition: opacity 0.5s ease-in-out; /* Transisi opacity */
-  opacity: 1; /* Default visibility */
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #333;
+  transition: opacity 0.5s ease-in-out;
+  opacity: 1;
+  min-height: 3rem; /* Menjaga tinggi tetap pada teks */
 }
 
 .animateText.fade-out {
-  opacity: 0; /* Menghilang */
+  opacity: 0;
 }
 
 .animateText.fade-in {
-  opacity: 1; /* Muncul */
+  opacity: 1;
+}
+
+/* Responsif untuk perangkat mobile */
+@media (max-width: 768px) {
+  .content {
+    padding: 2rem;
+  }
+
+  .avatarImage {
+    width: 200px;
+    height: 200px;
+  }
+
+  .description h1 {
+    font-size: 2rem;
+    min-height: 2.5rem; /* Menyesuaikan tinggi tetap pada mobile */
+  }
+
+  .description p {
+    font-size: 1rem;
+  }
+
+  .animateText {
+    font-size: 2rem;
+    min-height: 2.5rem;
+  }
+
+  .heroButton {
+    font-size: 0.9rem;
+    padding: 0.8rem 1.6rem;
+  }
 }
