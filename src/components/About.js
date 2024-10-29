@@ -25,7 +25,7 @@ const About = () => {
               passionate about data science, artificial intelligence, and
               cybersecurity. My journey has taken me through various exciting
               projects, from analyzing weather patterns to predicting student
-              success with machine learning. I’m particularly drawn to
+              success with machine learning. I&apos;m particularly drawn to
               intelligent systems and am eager to contribute innovative
               solutions in this field.
             </p>
@@ -53,14 +53,14 @@ const About = () => {
               Google, Tokopedia, Gojek, and Traveloka. This immersive experience
               introduced me to advanced machine learning topics and practical
               model deployment. I led the development of an AI model for
-              'Sereluna', a mental health mobile app, using natural language
-              processing to analyze user diary entries for mental health
-              insights.
+              &apos;Sereluna&apos;, a mental health mobile app, using natural
+              language processing to analyze user diary entries for mental
+              health insights.
             </p>
             <p className={styles["about-description"]}>
               Alongside my studies, I have actively contributed to Telkom
-              University’s Informatics Laboratory as an assistant, teaching data
-              structures and supporting practicum sessions for nearly 90
+              University&apos;s Informatics Laboratory as an assistant, teaching
+              data structures and supporting practicum sessions for nearly 90
               students. Additionally, my involvement in the Forensic and
               Security Laboratory has strengthened my knowledge in
               cybersecurity, where I honed my skills in Linux, network security,
