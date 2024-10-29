@@ -53,7 +53,7 @@ const About = () => {
               Google, Tokopedia, Gojek, and Traveloka. This immersive experience
               introduced me to advanced machine learning topics and practical
               model deployment. I led the development of an AI model for
-              "Sereluna," a mental health mobile app, using natural language
+              'Sereluna', a mental health mobile app, using natural language
               processing to analyze user diary entries for mental health
               insights.
             </p>
