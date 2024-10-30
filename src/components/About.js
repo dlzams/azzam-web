@@ -14,7 +14,7 @@ const About = () => {
   const shortDescription = (
     <>
       <p>
-        I'm a Computer Science student at Telkom University with a strong
+        I&apos;m a Computer Science student at Telkom University with a strong
         interest in data science, artificial intelligence, and cybersecurity.
         I&apos;ve worked on projects analyzing data to solve real-world
         problems, such as predicting weather patterns and understanding student
