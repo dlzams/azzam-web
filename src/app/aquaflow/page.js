@@ -36,10 +36,7 @@ const AquaFlow = () => {
         <button className={styles.backButton}>Kembali</button>
       </Link>
       <h1>AquaFlow Innovillage IoT-Based</h1>
-      <p>
-        Detail tentang proyek AquaFlow: Jelaskan tujuan, teknologi yang
-        digunakan, fitur utama, tantangan, dan hasil dari proyek ini.
-      </p>
+      <p>On Constructions</p>
     </div>
   );
 };

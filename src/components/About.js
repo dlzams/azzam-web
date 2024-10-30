@@ -15,16 +15,19 @@ const About = () => {
     <>
       <p>
         I&apos;m a Computer Science student at Telkom University with a strong
-        interest in data science, artificial intelligence, and cybersecurity.
-        I&apos;ve worked on projects analyzing data to solve real-world
-        problems, such as predicting weather patterns and understanding student
-        performance.
+        interest in research and career opportunities in data science,
+        artificial intelligence, and cybersecurity. I&apos;ve intern-ed at
+        Telkomsigma and have gained hands-on experience in the Hardware and
+        Embedded System Lab as well as the Forensic and Security Lab. My
+        projects involve analyzing data, creating visualizations, and building
+        machine learning models to solve real-world problems, such as predicting
+        weather patterns, assessing student performance, and others.
       </p>
       <p>
         Recently, I completed an internship at Telkomsigma, a subsidiary of
         Telkom Indonesia, where I was responsible for monitoring network traffic
-        and handling cybersecurity tasks for multinational clients, including
-        IBM and Oracle. I used tools like SIEM and Qradar to detect unusual
+        and handling cybersecurity tasks for multinational clients. I used tools
+        like SIEM, Qradar, Cybereason, Stellar, and others to detect unusual
         activity and create reports that helped clients improve their security.
       </p>
     </>
