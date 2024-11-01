@@ -44,7 +44,7 @@ const projects = [
   },
   {
     title:
-      "Implementation of a data structure utilizing the double linked list concept, specifically designed to store and manage user history.",
+      "Implementation of a data structure specifically designed to store and manage user history.",
     description:
       "The advantages of this approach include efficient navigation both forward and backward, providing an optimal storage solution for application or project development.",
     imageUrl: "/strukdat.jpg",
