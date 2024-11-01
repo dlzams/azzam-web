@@ -5,9 +5,9 @@ import styles from "../styles/Projects.module.css";
 
 const projects = [
   {
-    title: "Project 3",
-    description: "A short description of project 3",
-    imageUrl: "/project3.jpg",
+    title: "Automatic Watering",
+    description: "Using Arduino, ESP32, Various Sensors, and IoT",
+    imageUrl: "/innovillage.jpg",
     caption: "AquaFlow Innovillage IoT-Based",
     internalUrl: "/aquaflow",
   },
@@ -19,29 +19,34 @@ const projects = [
     url: "https://barocars.up.railway.app/", // Tambahkan URL untuk setiap proyek
   },
   {
-    title: "Project 2",
-    description: "A short description of project 2",
+    title: "Detection User Mental Health",
+    description:
+      "Built with Kotlin, TensorFlow, and Natural Languange Processing",
     imageUrl: "/sereluna.jpg",
     caption: "SereLuna Mobile-Based using AI",
     url: "https://github.com/dlzams/SereLunaApp",
   },
   {
-    title: "Project 3",
-    description: "A short description of project 3",
+    title: "A Simple blockchain mining system implemented in Python",
+    description:
+      "The system is designed to demonstrate the basic principles of blockchain technology, including block creation, hashing, and mining.",
     imageUrl: "/blockchain.jpg",
     caption: "Blockchain Mining System",
     url: "https://github.com/dlzams/blockchain-mining",
   },
   {
-    title: "Project 3",
-    description: "A short description of project 3",
+    title: "Implement Convolutional Neural Network",
+    description:
+      "A CNN-based image classification project to accurately distinguish between images of cats and dogs using the 'Cats vs Dogs' dataset.",
     imageUrl: "/cnnimages.jpg",
     caption: "CNN Images Classification using Cats-Dogs Dataset",
     url: "https://github.com/dlzams/cnn-images",
   },
   {
-    title: "Project 3",
-    description: "A short description of project 3",
+    title:
+      "Implementation of a data structure utilizing the double linked list concept, specifically designed to store and manage user history.",
+    description:
+      "The advantages of this approach include efficient navigation both forward and backward, providing an optimal storage solution for application or project development.",
     imageUrl: "/strukdat.jpg",
     caption: "Data Structure - Implement Double Linked List",
     url: "https://github.com/dlzams/data-structure",

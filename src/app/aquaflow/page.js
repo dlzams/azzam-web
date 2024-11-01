@@ -36,7 +36,7 @@ const AquaFlow = () => {
         <button className={styles.backButton}>Kembali</button>
       </Link>
       <h1>AquaFlow Innovillage IoT-Based</h1>
-      <p>On Constructions</p>
+      <p>Under Constructions</p>
     </div>
   );
 };
