@@ -29,7 +29,7 @@ export default function RootLayout({ children }) {
         {/* Tambahkan favicon secara eksplisit di sini */}
         <link rel="icon" href="/favicon.ico" />
       </head>
-      <body style={{ paddingTop: "60px" }}>
+      <body>
         <main>{children}</main>
         <ScrollToTop />
         <LastUpdate />

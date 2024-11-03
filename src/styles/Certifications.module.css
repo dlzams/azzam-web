@@ -14,8 +14,8 @@
 .certificationGrid {
   display: grid;
   grid-template-columns: repeat(4, 1fr); /* Maksimal 4 kolom dalam 1 baris */
-  column-gap: 0.5rem; /* Mengatur jarak antar card di kanan-kiri */
-  row-gap: 2rem; /* Mengatur jarak antar card di atas-bawah */
+  column-gap: 1.5rem; /* Jarak antar card di kanan-kiri */
+  row-gap: 2rem; /* Jarak antar card di atas-bawah */
   justify-items: center;
 }
 
@@ -45,6 +45,7 @@
   max-width: 300px;
   display: flex;
   flex-direction: column; /* Membuat layout vertikal */
+  margin: 0; /* Menghapus margin yang tidak perlu */
 }
 
 .certificationCard:hover {
@@ -87,4 +88,60 @@
 
 .certificateLink:hover {
   text-decoration: underline;
+}
+
+.viewMoreContainer {
+  display: flex; /* Gunakan flexbox untuk memusatkan */
+  justify-content: center; /* Pusatkan isi secara horizontal */
+  margin-top: 3rem; /* Jarak di atas tombol */
+}
+
+.viewMoreButton {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #4a90e2;
+  color: #fff;
+  padding: 0.5rem 1.5rem;
+  border: none;
+  border-radius: 50px;
+  font-size: 1rem;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  height: 50px;
+  text-decoration: none;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+  padding-right: 3rem;
+  padding-left: 3rem;
+}
+
+.viewMoreButton:hover {
+  background-color: #5b9bd5; /* Warna saat hover lebih cerah */
+  height: 70px; /* Tinggi saat hover */
+  padding: 1rem 1.5rem; /* Menambah padding saat hover */
+  transform: translateY(-5px); /* Efek sedikit mengangkat saat hover */
+}
+
+.viewMoreButton:active {
+  transform: translateY(0); /* Kembali ke posisi saat ditekan */
+}
+
+.viewMoreButton:hover {
+  height: 80px;
+  padding: 2rem 3rem;
+  background-color: #0070f3;
+  transform: translateY(-5px);
+  -webkit-transform: translateY(-5px);
+  -moz-transform: translateY(-5px);
+  -ms-transform: translateY(-5px);
+  -o-transform: translateY(-5px);
+}
+
+.viewMoreButton:active {
+  transform: translateY(0); /* Kembali ke posisi saat ditekan */
 }

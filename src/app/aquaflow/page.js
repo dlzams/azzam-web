@@ -33,7 +33,7 @@ const AquaFlow = () => {
   return (
     <div className={styles.content}>
       <Link href="/" passHref>
-        <button className={styles.backButton}>Kembali</button>
+        <button className={styles.backButton}>Back</button>
       </Link>
       <h1>AquaFlow Innovillage IoT-Based</h1>
       <p>Under Constructions</p>

@@ -10,9 +10,6 @@ html {
 }
 
 /* Tambahkan padding pada kontainer utama agar konten tidak terlalu menempel ke tepi */
-.container {
-  padding: 0 2rem;
-}
 
 .title {
   font-weight: 700; /* Bold untuk judul */
@@ -20,8 +17,4 @@ html {
 
 .description {
   font-weight: 400; /* Normal untuk deskripsi */
-}
-
-body {
-  padding-top: 60px; /* Sesuaikan dengan tinggi navbar */
 }
