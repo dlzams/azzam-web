@@ -9,7 +9,7 @@ const certificationsData = [
     ],
     credentialUrl:
       "https://www.coursera.org/account/accomplishments/verify/LJMDX7P8236B",
-    issuer: "Coursera",
+    issuer: "Google & Coursera",
   },
   {
     imageUrl: "/certifications/certf-2.jpg",
@@ -21,7 +21,7 @@ const certificationsData = [
     ],
     credentialUrl:
       "https://www.coursera.org/account/accomplishments/verify/83N73F37ZBX8",
-    issuer: "Coursera",
+    issuer: "Google & Coursera",
   },
   {
     imageUrl: "/certifications/certf-3.jpg",
@@ -33,7 +33,7 @@ const certificationsData = [
     ],
     credentialUrl:
       "https://www.coursera.org/account/accomplishments/verify/74KCP5W6PM8Y",
-    issuer: "Coursera",
+    issuer: "Google & Coursera",
   },
   {
     imageUrl: "/certifications/certf-4.jpg",
@@ -45,7 +45,7 @@ const certificationsData = [
     ],
     credentialUrl:
       "https://www.coursera.org/account/accomplishments/verify/RDKQVFVBCHTL",
-    issuer: "Coursera",
+    issuer: "Google & Coursera",
   },
   {
     imageUrl: "/certifications/certf-5.jpg",
@@ -57,7 +57,7 @@ const certificationsData = [
     ],
     credentialUrl:
       "https://www.coursera.org/account/accomplishments/verify/CEQE555E9FWP",
-    issuer: "Coursera",
+    issuer: "Google & Coursera",
   },
   {
     imageUrl: "/certifications/certf-6.jpg",
@@ -102,7 +102,7 @@ const certificationsData = [
     ],
     credentialUrl:
       "https://www.coursera.org/account/accomplishments/verify/DB57BJJM7HFY",
-    issuer: "Coursera",
+    issuer: "DeepLearning.AI & Coursera",
   },
   {
     imageUrl: "/certifications/certf-10.jpg",
@@ -114,7 +114,7 @@ const certificationsData = [
     ],
     credentialUrl:
       "https://www.coursera.org/account/accomplishments/specialization/C8D8ZQ2NLXGC",
-    issuer: "Coursera",
+    issuer: "DeepLearning.AI & Coursera",
   },
   {
     imageUrl: "/certifications/certf-11.jpg",
@@ -126,7 +126,7 @@ const certificationsData = [
     ],
     credentialUrl:
       "https://www.coursera.org/account/accomplishments/verify/99DWXZJZZLAG",
-    issuer: "Coursera",
+    issuer: "DeepLearning.AI & Coursera",
   },
   {
     imageUrl: "/certifications/certf-12.jpg",
@@ -138,7 +138,7 @@ const certificationsData = [
     ],
     credentialUrl:
       "https://www.coursera.org/account/accomplishments/verify/6GF96DG7CEZP",
-    issuer: "Coursera",
+    issuer: "DeepLearning.AI & Coursera",
   },
   {
     imageUrl: "/certifications/certf-13.jpg",
@@ -150,7 +150,7 @@ const certificationsData = [
     ],
     credentialUrl:
       "https://www.coursera.org/account/accomplishments/verify/FQ3FC96W6SHX",
-    issuer: "Coursera",
+    issuer: "Google & Coursera",
   },
   {
     imageUrl: "/certifications/certf-14.jpg",
@@ -162,7 +162,7 @@ const certificationsData = [
     ],
     credentialUrl:
       "https://www.coursera.org/account/accomplishments/verify/VCM9A89YPPBU",
-    issuer: "Coursera",
+    issuer: "DeepLearning.AI, StandFord, & Coursera",
   },
   {
     imageUrl: "/certifications/certf-15.jpg",
@@ -174,7 +174,7 @@ const certificationsData = [
     ],
     credentialUrl:
       "https://www.coursera.org/account/accomplishments/verify/FHQ4386NGQCQ",
-    issuer: "Coursera",
+    issuer: "DeepLearning.AI, StandFord, & Coursera",
   },
   {
     imageUrl: "/certifications/certf-16.jpg",
@@ -186,7 +186,7 @@ const certificationsData = [
     ],
     credentialUrl:
       "https://www.coursera.org/account/accomplishments/specialization/E64XFY5YAFST",
-    issuer: "Coursera",
+    issuer: "DeepLearning.AI, StandFord, & Coursera",
   },
   {
     imageUrl: "/certifications/certf-17.jpg",
@@ -199,7 +199,7 @@ const certificationsData = [
     ],
     credentialUrl:
       "https://www.coursera.org/account/accomplishments/verify/W6PXGFJZU4NM",
-    issuer: "Coursera",
+    issuer: "DeepLearning.AI & Coursera",
   },
   {
     imageUrl: "/certifications/certf-18.jpg",
@@ -211,7 +211,7 @@ const certificationsData = [
     ],
     credentialUrl:
       "https://www.coursera.org/account/accomplishments/verify/6HCMV2489R5R",
-    issuer: "Coursera",
+    issuer: "DeepLearning.AI & Coursera",
   },
   {
     imageUrl: "/certifications/certf-19.jpg",
@@ -223,7 +223,7 @@ const certificationsData = [
     ],
     credentialUrl:
       "https://www.coursera.org/account/accomplishments/verify/RGWEXWX4HPQL",
-    issuer: "Coursera",
+    issuer: "DeepLearning.AI & Coursera",
   },
   {
     imageUrl: "/certifications/certf-20.jpg",
@@ -235,7 +235,7 @@ const certificationsData = [
     ],
     credentialUrl:
       "https://www.coursera.org/account/accomplishments/specialization/V24B7YKR9MYX",
-    issuer: "Coursera",
+    issuer: "DeepLearning.AI & Coursera",
   },
   {
     imageUrl: "/certifications/certf-21.jpg",
@@ -247,7 +247,7 @@ const certificationsData = [
     ],
     credentialUrl:
       "https://www.coursera.org/account/accomplishments/specialization/VX9ERJBG8RBQ",
-    issuer: "Coursera",
+    issuer: "DeepLearning.AI & Coursera",
   },
   {
     imageUrl: "/certifications/certf-22.jpg",
@@ -259,7 +259,7 @@ const certificationsData = [
     ],
     credentialUrl:
       "https://www.coursera.org/account/accomplishments/verify/PF8UXXH9LC9X",
-    issuer: "Coursera",
+    issuer: "DeepLearning.AI & Coursera",
   },
   {
     imageUrl: "/certifications/certf-23.jpg",
@@ -271,7 +271,7 @@ const certificationsData = [
     ],
     credentialUrl:
       "https://www.coursera.org/account/accomplishments/verify/H5MC5EJSK8B3",
-    issuer: "Coursera",
+    issuer: "DeepLearning.AI & Coursera",
   },
   {
     imageUrl: "/certifications/certf-24.jpg",
@@ -283,7 +283,7 @@ const certificationsData = [
     ],
     credentialUrl:
       "https://www.coursera.org/account/accomplishments/verify/XE5AN5P5YMY7",
-    issuer: "Coursera",
+    issuer: "DeepLearning.AI & Coursera",
   },
   {
     imageUrl: "/certifications/certf-25.jpg",
@@ -295,7 +295,7 @@ const certificationsData = [
     ],
     credentialUrl:
       "https://www.coursera.org/account/accomplishments/verify/7XV48NSLYBZL",
-    issuer: "Coursera",
+    issuer: "DeepLearning.AI & Coursera",
   },
   {
     imageUrl: "/certifications/certf-26.jpg",
@@ -307,7 +307,7 @@ const certificationsData = [
     ],
     credentialUrl:
       "https://www.coursera.org/account/accomplishments/verify/XUXFHH5FCA5V",
-    issuer: "Coursera",
+    issuer: "DeepLearning.AI & Coursera",
   },
   {
     imageUrl: "/certifications/certf-27.jpg",
@@ -319,7 +319,7 @@ const certificationsData = [
     ],
     credentialUrl:
       "https://www.coursera.org/account/accomplishments/verify/9GPJBK9TQSD4",
-    issuer: "Coursera",
+    issuer: "DeepLearning.AI & Coursera",
   },
   {
     imageUrl: "/certifications/certf-28.jpg",
@@ -331,7 +331,7 @@ const certificationsData = [
     ],
     credentialUrl:
       "https://www.coursera.org/account/accomplishments/specialization/GXAKEPSRSRNP",
-    issuer: "Coursera",
+    issuer: "DeepLearning.AI & Coursera",
   },
   {
     imageUrl: "/certifications/certf-29.jpg",
@@ -343,7 +343,7 @@ const certificationsData = [
     ],
     credentialUrl:
       "https://www.coursera.org/account/accomplishments/verify/VY5KXNEA8YFZ",
-    issuer: "Coursera",
+    issuer: "DeepLearning.AI & Coursera",
   },
   {
     imageUrl: "/certifications/certf-30.jpg",
@@ -355,7 +355,7 @@ const certificationsData = [
     ],
     credentialUrl:
       "https://www.coursera.org/account/accomplishments/verify/7TXFR9E9H5AJ",
-    issuer: "Coursera",
+    issuer: "DeepLearning.AI & Coursera",
   },
   {
     imageUrl: "/certifications/certf-31.jpg",
@@ -367,7 +367,7 @@ const certificationsData = [
     ],
     credentialUrl:
       "https://www.coursera.org/account/accomplishments/verify/P6MY975HL4S6",
-    issuer: "Coursera",
+    issuer: "DeepLearning.AI & Coursera",
   },
   {
     imageUrl: "/certifications/certf-32.jpg",
@@ -379,7 +379,7 @@ const certificationsData = [
     ],
     credentialUrl:
       "https://www.coursera.org/account/accomplishments/verify/J7RW8WRGUZ6C",
-    issuer: "Coursera",
+    issuer: "DeepLearning.AI & Coursera",
   },
   {
     imageUrl: "/certifications/certf-33.jpg",
@@ -391,7 +391,7 @@ const certificationsData = [
     ],
     credentialUrl:
       "https://www.coursera.org/account/accomplishments/verify/MZH9GDN9V2DU",
-    issuer: "Coursera",
+    issuer: "DeepLearning.AI & Coursera",
   },
   {
     imageUrl: "/certifications/certf-34.jpg",
@@ -403,7 +403,7 @@ const certificationsData = [
     ],
     credentialUrl:
       "https://www.coursera.org/account/accomplishments/verify/QEK5C8FK6HCK",
-    issuer: "Coursera",
+    issuer: "DeepLearning.AI & Coursera",
   },
 ];
 

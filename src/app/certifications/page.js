@@ -37,8 +37,8 @@ const Certifications = () => {
       </Link>
       <h1 className={styles.title}>My Certifications</h1>
       <p className={styles.description}>
-        This page showcases my certifications in various fields of study and
-        expertise. Feel free to explore the details of each certification below.
+        These are my professional certifications, recognized globally. Explore
+        the details below!
       </p>
       <hr className={styles.divider} />
       <div className={styles.cardContainer}>
