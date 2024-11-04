@@ -6,6 +6,7 @@ import Experiences from "../components/Experiences";
 import Projects from "../components/Projects";
 import Certifications from "@/components/Certifications";
 import Contact from "@/components/Contact";
+import Footer from "@/components/Footer";
 
 export default function HomePage() {
   return (
@@ -28,6 +29,9 @@ export default function HomePage() {
       </section>
       <section id="contact">
         <Contact />
+      </section>
+      <section id="footer">
+        <Footer />
       </section>
     </main>
   );

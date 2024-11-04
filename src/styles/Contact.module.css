@@ -12,7 +12,29 @@
   color: #333;
 }
 
+.contactContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  max-width: 1000px;
+  padding: 2rem 0;
+  margin: 0 auto; /* Pusatkan container */
+}
+
+.imageWrapper {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.contactImage {
+  max-width: 100%;
+  height: auto;
+}
+
 .form {
+  flex: 1;
   max-width: 500px;
   margin: 0 auto;
   display: flex;
@@ -101,21 +123,14 @@
   color: red;
 }
 
-@media (max-width: 600px) {
-  .title {
-    font-size: 1.5rem;
+@media (max-width: 768px) {
+  .contactContainer {
+    flex-direction: column;
+    align-items: center;
   }
 
+  .imageWrapper,
   .form {
-    padding: 1rem;
-  }
-
-  .input,
-  .textarea {
-    padding: 0.6rem;
-  }
-
-  .submitButton {
-    font-size: 0.9rem;
+    max-width: 100%;
   }
 }

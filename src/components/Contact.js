@@ -1,6 +1,7 @@
 "use client";
 import { useState, useEffect } from "react";
 import emailjs from "@emailjs/browser";
+import Image from "next/image";
 import styles from "../styles/Contact.module.css";
 
 const Contact = () => {
@@ -78,53 +79,64 @@ const Contact = () => {
           Please ensure all fields are filled out correctly.
         </p>
       )}
-      <form className={styles.form} onSubmit={handleSubmit}>
-        <div className={styles.formGroup}>
-          <label htmlFor="name" className={styles.label}>
-            Your Name
-          </label>
-          <input
-            type="text"
-            id="name"
-            name="name"
-            placeholder="Enter your name"
-            className={styles.input}
-            required
+      <div className={styles.contactContainer}>
+        <div className={styles.imageWrapper}>
+          <Image
+            src="/contactimg.jpg" // Pastikan gambar ada di dalam folder public
+            alt="Contact"
+            className={styles.contactImage}
+            width={300} // Tambahkan lebar
+            height={400} // Tambahkan tinggi
           />
         </div>
-        <div className={styles.formGroup}>
-          <label htmlFor="email" className={styles.label}>
-            Your Email
-          </label>
-          <input
-            type="email"
-            id="email"
-            name="email"
-            placeholder="Enter your email"
-            className={styles.input}
-            required
-          />
-        </div>
-        <div className={styles.formGroup}>
-          <label htmlFor="message" className={styles.label}>
-            Your Message
-          </label>
-          <textarea
-            id="message"
-            name="message"
-            placeholder="Enter your message"
-            className={styles.textarea}
-            required
-          ></textarea>
-        </div>
-        <button
-          type="submit"
-          className={styles.submitButton}
-          disabled={isSubmitting}
-        >
-          {isSubmitting ? "Submitting..." : "Submit"}
-        </button>
-      </form>
+        <form className={styles.form} onSubmit={handleSubmit}>
+          <div className={styles.formGroup}>
+            <label htmlFor="name" className={styles.label}>
+              Your Name
+            </label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Enter your name"
+              className={styles.input}
+              required
+            />
+          </div>
+          <div className={styles.formGroup}>
+            <label htmlFor="email" className={styles.label}>
+              Your Email
+            </label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Enter your email"
+              className={styles.input}
+              required
+            />
+          </div>
+          <div className={styles.formGroup}>
+            <label htmlFor="message" className={styles.label}>
+              Your Message
+            </label>
+            <textarea
+              id="message"
+              name="message"
+              placeholder="Enter your message"
+              className={styles.textarea}
+              required
+            ></textarea>
+          </div>
+          <button
+            type="submit"
+            className={styles.submitButton}
+            disabled={isSubmitting}
+          >
+            {isSubmitting ? "Submitting..." : "Submit"}
+          </button>
+        </form>
+      </div>
     </section>
   );
 };

@@ -1,6 +1,8 @@
 "use client";
 
 import React, { useEffect, useState, useRef } from "react";
+import Link from "next/link";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 import styles from "../styles/HeroSection.module.css";
 
 const HeroSection = () => {
@@ -76,7 +78,25 @@ const HeroSection = () => {
             Deep Learning, Data Analysis, and Front-End Web Development.
           </p>
         </div>
-        <button className={styles.heroButton}>Contact Me →</button>
+        <Link href="#contact">
+          <button className={styles.heroButton}>Contact Me →</button>
+        </Link>
+        <div className={styles.socialIcons}>
+          <a
+            href="https://github.com/dlzams"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaGithub className={styles.icon} />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/muh-azzam/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaLinkedin className={styles.icon} />
+          </a>
+        </div>
       </div>
     </section>
   );
