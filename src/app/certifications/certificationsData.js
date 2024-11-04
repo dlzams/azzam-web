@@ -141,9 +141,10 @@ const certificationsData = [
     imageUrl: "/certifications/certf-11.jpg",
     title: "Linear Algebra for Machine Learning and Data Science",
     description: [
-      "Memahami konsep aljabar linear untuk ML.",
-      "Penerapan aljabar linear dalam machine learning.",
-      "Keterampilan yang didapat: Aljabar linear.",
+      "Represent data as vectors and matrices and identify their properties using concepts of singularity, rank, and linear independence.",
+      "Express certain types of matrix operations as linear transformation, and apply concepts of eigenvalues and eigenvectors to machine learning problems.",
+      "Apply common vector and matrix algebra operations like dot product, inverse, and determinants.",
+      "Eigenvalues And Eigenvectors, Linear Equation, Determinants, Machine Learning, and Linear Algebra.",
     ],
     credentialUrl:
       "https://www.coursera.org/account/accomplishments/verify/99DWXZJZZLAG",
@@ -153,9 +154,11 @@ const certificationsData = [
     imageUrl: "/certifications/certf-12.jpg",
     title: "Calculus for Machine Learning and Data Science",
     description: [
-      "Memahami dasar-dasar kalkulus untuk ML.",
-      "Penerapan kalkulus dalam machine learning.",
-      "Keterampilan yang didapat: Kalkulus untuk ML.",
+      "Analytically optimize different types of functions commonly used in machine learning using properties of derivatives and gradients.",
+      "Visually interpret differentiation of different types of functions commonly used in machine learning.",
+      "Approximately optimize different types of functions commonly used in machine learning.",
+      "Perform gradient descent in neural networks with different activation and cost functions.",
+      "Calculus, Machine Learning, Newton'S Method, Gradient Descent, and Mathematical Optimization.",
     ],
     credentialUrl:
       "https://www.coursera.org/account/accomplishments/verify/6GF96DG7CEZP",
@@ -165,9 +168,11 @@ const certificationsData = [
     imageUrl: "/certifications/certf-13.jpg",
     title: "Analyze Data to Answer Questions",
     description: [
-      "Belajar analisis data untuk menjawab pertanyaan bisnis.",
-      "Penggunaan alat-alat analisis data dasar.",
-      "Keterampilan yang didapat: Analisis data.",
+      "Discuss the importance of organizing your data before analysis by using sorts and filters.",
+      "Apply the use of functions and syntax to create SQL queries to combine data from multiple database tables.",
+      "Describe the use of functions to conduct basic calculations on data in spreadsheets.",
+      "Convert and format data.",
+      "Data Aggregation, Spreadsheet, Data Analysis, Data Calculations, and SQL.",
     ],
     credentialUrl:
       "https://www.coursera.org/account/accomplishments/verify/FQ3FC96W6SHX",
