@@ -32,7 +32,6 @@ export default function RootLayout({ children }) {
       <body>
         <main>{children}</main>
         <ScrollToTop />
-        <LastUpdate />
       </body>
     </html>
   );
