@@ -74,12 +74,11 @@
   text-align: left;
   list-style-type: disc;
   padding-left: 1.5rem;
-  margin-top: auto; /* Memastikan jarak konsisten antara deskripsi dan bagian credential */
 }
 
 .certificateLink {
   display: inline-block;
-  margin-top: 1.5rem; /* Jarak ekstra agar credential tetap di bawah */
+  margin-top: auto; /* Jarak ekstra agar credential tetap di bawah */
   color: #2c3b4b;
   text-decoration: none;
   font-weight: bold;
