@@ -1,9 +1,10 @@
 .about-section {
   background-color: #f8f9fa;
-  padding: 0.5rem 2rem;
+  padding: 0.5rem;
   display: flex;
   justify-content: center;
   min-height: 75vh;
+  padding-bottom: 5rem;
 }
 
 .about-container {
@@ -108,7 +109,8 @@
 
   .about-image-container {
     width: 100%; /* Pastikan gambar penuh lebar pada layar kecil */
-    margin-bottom: 1.5rem; /* Tambahkan margin bawah agar lebih rapi */
+    margin-bottom: 0rem; /* Tambahkan margin bawah agar lebih rapi */
+    margin-top: 1.5rem;
   }
 
   .about-image {
@@ -123,11 +125,13 @@
 
   .about-title {
     font-size: 2rem; /* Kurangi ukuran font judul pada layar kecil */
+    padding-bottom: 0rem;
   }
 
   .about-description {
     font-size: 0.95rem; /* Kurangi ukuran font deskripsi */
     text-align: justify; /* Tetap rata kanan-kiri pada mobile */
+    padding: 0.5rem;
   }
 
   .skills-list {
