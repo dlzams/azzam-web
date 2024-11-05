@@ -94,6 +94,42 @@
   text-decoration: underline; /* Garis bawah saat hover */
 }
 
+/* Kelas loading */
+.loading {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; /* Pusatkan konten */
+  height: 100vh; /* Mengisi seluruh tinggi halaman */
+  background-color: #2c2c2c; /* Warna latar belakang loading */
+}
+
+.spinner {
+  width: 50px; /* Ukuran lingkaran loading */
+  height: 50px; /* Ukuran lingkaran loading */
+  border: 5px solid #444; /* Warna lingkaran */
+  border-top: 5px solid #1e90ff; /* Warna bagian atas lingkaran */
+  border-radius: 50%; /* Membuat lingkaran */
+  animation: spin 1s linear infinite; /* Animasi berputar */
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.loadingText {
+  margin-top: 1rem; /* Jarak antara spinner dan teks */
+  font-size: 1.2rem; /* Ukuran font teks loading */
+  color: #ffffff; /* Warna teks putih */
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
 /* Kelas backButton */
 .backButton {
   position: fixed;

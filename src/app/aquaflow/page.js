@@ -1,4 +1,3 @@
-// src/app/aquaflow/page.js
 "use client";
 
 import Link from "next/link";
@@ -19,13 +18,9 @@ const AquaFlow = () => {
 
   if (isLoading) {
     return (
-      <div className={`${styles.loading} ${styles.fadeOut}`}>
-        <div className={styles.spinner}>
-          <div className={styles.dot}></div>
-          <div className={styles.dot}></div>
-          <div className={styles.dot}></div>
-        </div>
-        <p className={styles.loadingText}>Loading</p>
+      <div className={styles.loading}>
+        <div className={styles.spinner}></div> {/* Spinner berputar */}
+        <p className={styles.loadingText}>Loading</p> {/* Teks loading */}
       </div>
     );
   }
@@ -36,7 +31,9 @@ const AquaFlow = () => {
         <button className={styles.backButton}>Back</button>
       </Link>
       <h1>AquaFlow Innovillage IoT-Based</h1>
-      <p>Under Constructions</p>
+      <p>Under Construction</p>
+      <p>This page will showcase IoT solutions for smart living.</p>{" "}
+      {/* Menambahkan deskripsi */}
     </div>
   );
 };

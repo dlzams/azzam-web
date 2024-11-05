@@ -19,13 +19,9 @@ const Certifications = () => {
 
   if (isLoading) {
     return (
-      <div className={`${styles.loading} ${styles.fadeOut}`}>
-        <div className={styles.spinner}>
-          <div className={styles.dot}></div>
-          <div className={styles.dot}></div>
-          <div className={styles.dot}></div>
-        </div>
-        <p className={styles.loadingText}>Loading</p>
+      <div className={styles.loading}>
+        <div className={styles.spinner}></div> {/* Spinner berputar */}
+        <p className={styles.loadingText}>Loading</p> {/* Teks loading */}
       </div>
     );
   }

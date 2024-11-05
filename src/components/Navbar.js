@@ -3,6 +3,7 @@
 
 import { useState } from "react";
 import Link from "next/link"; // Import Link dari next/link
+import Image from "next/image"; // Import Image dari next/image
 import styles from "../styles/Navbar.module.css";
 
 const Navbar = () => {
@@ -19,9 +20,16 @@ const Navbar = () => {
 
   return (
     <nav className={styles.navbar}>
-      {/* Logo with Link to Homepage */}
+      {/* Logo as Image with Link to Homepage */}
       <Link href="/" passHref legacyBehavior>
-        <a className={styles.logo}>MyPortfolio 🎮</a>
+        <a className={styles.logo}>
+          <Image
+            src="/logo.jpg" // Path ke gambar logo di folder public
+            alt="My Portfolio Logo"
+            width={200} // Sesuaikan lebar logo
+            height={50} // Sesuaikan tinggi logo
+          />
+        </a>
       </Link>
 
       <div className={styles.hamburger} onClick={toggleMenu}>
