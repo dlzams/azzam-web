@@ -9,6 +9,7 @@
   font-size: 2.5rem;
   font-weight: bold;
   margin-bottom: 1rem;
+  padding-top: 1rem;
 }
 
 .description {
@@ -130,7 +131,6 @@
   text-transform: uppercase;
 }
 
-/* Kelas backButton */
 .backButton {
   position: fixed;
   top: 20px;
@@ -138,11 +138,11 @@
   padding: 0.8rem 1.2rem;
   font-size: 0.9rem;
   font-weight: bold;
-  background-color: #0070f3;
-  color: #fff;
+  background-color: #0070f3; /* Warna tombol */
+  color: #fff; /* Warna teks */
   border: none;
-  border-radius: 5px;
-  cursor: pointer;
+  border-radius: 50px; /* Menggunakan border radius yang konsisten */
+  cursor: pointer; /* Menggunakan pointer saat hover */
   z-index: 1000;
   transition: background-color 0.3s ease;
 }

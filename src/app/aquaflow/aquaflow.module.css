@@ -45,10 +45,10 @@
   font-size: 0.9rem;
   font-weight: bold;
   background-color: #0070f3; /* Warna tombol */
-  color: #fff;
+  color: #fff; /* Warna teks */
   border: none;
-  border-radius: 5px;
-  cursor: pointer;
+  border-radius: 50px; /* Menggunakan border radius yang konsisten */
+  cursor: pointer; /* Menggunakan pointer saat hover */
   z-index: 1000;
   transition: background-color 0.3s ease;
 }
