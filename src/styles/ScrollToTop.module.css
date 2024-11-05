@@ -1,13 +1,11 @@
-/* src/styles/ScrollToTop.module.css */
-
 .scrollToTop {
   position: fixed;
   bottom: 20px; /* Jarak dari bawah */
   right: 20px; /* Jarak dari kanan */
   width: 45px;
   height: 45px;
-  background-color: #333; /* Warna abu-abu gelap */
-  color: #f5f5f5; /* Warna putih untuk ikon */
+  background-color: #ffffff; /* Warna abu-abu gelap */
+  color: #1e1e1e; /* Dark gray untuk ikon agar kontras dengan latar belakang putih */
   border-radius: 50%;
   display: flex;
   justify-content: center;
@@ -15,7 +13,7 @@
   font-size: 22px;
   font-weight: bold;
   cursor: pointer;
-  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3); /* Bayangan */
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3); /* Bayangan untuk menonjolkan tombol */
   transition: transform 0.3s ease, background-color 0.3s ease;
   opacity: 0;
   visibility: hidden;
@@ -26,14 +24,15 @@
   opacity: 1;
   visibility: visible;
   transform: translateY(0); /* Slide ke posisi semula */
-  transition: opacity 0.3s ease, transform 0.3s ease; /* Transisi untuk kemunculan */
+  transition: opacity 0.3s ease, transform 0.3s ease; /* Transisi kemunculan */
 }
 
 .scrollToTop:hover {
-  background-color: #555; /* Sedikit lebih terang saat di-hover */
-  transform: scale(1.05); /* Sedikit zoom saat di-hover */
+  background-color: #f0f0f0; /* Abu-abu sangat terang saat hover untuk efek */
+  transform: scale(1.05); /* Zoom saat di-hover */
 }
 
 .scrollToTop::before {
   content: "↑"; /* Panah minimalis */
+  color: #1e1e1e; /* Dark gray untuk panah agar sesuai dengan ikon */
 }

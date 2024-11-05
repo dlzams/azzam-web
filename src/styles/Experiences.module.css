@@ -2,13 +2,13 @@
 
 .experiences {
   position: relative;
-  background-color: #f2f2f2; /* Warna abu lembut */
+  background-color: #2a2a2a; /* Warna abu lembut */
   padding: 0rem 2rem 4rem;
   overflow: hidden;
   background: linear-gradient(
     120deg,
-    rgba(242, 242, 242, 1),
-    rgba(200, 200, 200, 0.8) /* Gradient abu-abu */
+    rgba(42, 42, 42, 1),
+    rgba(50, 50, 50, 0.8) /* Gradient abu gelap sedikit lebih terang */
   );
 }
 
@@ -21,10 +21,10 @@
   content: "";
   position: absolute;
   border-radius: 50%;
-  background-color: rgba(50, 50, 50, 0.3); /* Warna abu lebih gelap */
+  background-color: rgba(70, 70, 70, 0.5); /* Darker gray bubbles */
   opacity: 0.4;
   animation: float 10s infinite ease-in-out;
-  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1); /* Bayangan lembut */
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2); /* Bayangan lembut */
 }
 
 /* Bubble utama */
@@ -88,7 +88,7 @@
   font-weight: bold;
   margin-bottom: 2.5rem;
   margin-top: -8rem;
-  color: #333; /* Teks gelap */
+  color: #ffffff; /* Teks gelap */
 }
 
 .timeline {
@@ -108,22 +108,26 @@
   bottom: 0;
   left: 25px; /* Posisi garis vertikal */
   width: 2px;
-  background-color: rgba(0, 0, 0, 0.15); /* Warna garis abu lebih gelap */
+  background-color: rgba(255, 255, 255, 0.25); /* Light gray line */
 }
 
 .card {
   position: relative;
-  margin-left: 2rem; /* Jarak dari garis vertikal */
-  background-color: #ffffff; /* Latar belakang putih untuk kartu */
+  margin-left: 2rem;
+  background-color: #4a4a4a; /* Darker gray for card background */
   padding: 1.5rem;
-  border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); /* Shadow lebih lembut */
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.15);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
 }
 
 .card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15); /* Shadow lebih dalam saat hover */
+  box-shadow: 0 6px 16px rgba(255, 255, 255, 0.9); /* Shadow lebih dalam saat hover */
 }
 
 .header {
@@ -135,22 +139,22 @@
 .jobTitle {
   font-size: 1.5rem;
   font-weight: bold;
-  color: #333;
+  color: #ffffff;
   margin-right: 1rem; /* Jarak antara judul dan gambar */
 }
 
 .company {
   font-style: italic;
-  color: #666; /* Warna teks abu untuk detail perusahaan */
+  color: #cccccc; /* Warna teks abu untuk detail perusahaan */
 }
 
 .date {
-  color: #444; /* Warna abu gelap untuk tanggal */
+  color: #e0e0e0; /* Warna abu gelap untuk tanggal */
   margin-bottom: 1rem;
 }
 
 .description {
-  color: #333; /* Warna teks utama gelap */
+  color: #dddddd; /* Warna teks utama gelap */
   padding-left: 1.5rem; /* Menambahkan padding kiri untuk daftar */
   list-style-type: disc; /* Menampilkan bullet points */
   margin-top: 0.5rem;

@@ -7,7 +7,7 @@
   padding: 1rem;
   position: relative;
   overflow: hidden;
-  background-color: #f8f9fa;
+  background-color: #1c1c1c;
   min-height: 100vh;
   padding-bottom: 0.3rem;
 }
@@ -17,7 +17,7 @@
   position: absolute;
   width: 15px;
   height: 15px;
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
   animation: float 8s ease-in-out infinite;
 }
@@ -70,7 +70,8 @@
   padding: 4rem;
   padding-top: 0;
   border-radius: 10px;
-  background-color: #f8f9fa;
+  background-color: #1c1c1c;
+  color: #e0e0e0;
 }
 
 .avatarImage {
@@ -78,7 +79,7 @@
   height: 300px;
   border-radius: 50%;
   object-fit: cover;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
   position: relative; /* Menambahkan positioning untuk menggunakan z-index */
   z-index: 10; /* Pastikan nilainya lebih tinggi dari elemen lain */
 }
@@ -119,14 +120,14 @@
 .description h1 {
   font-size: 2.5rem;
   font-weight: 800;
-  color: #333;
+  color: #ffffff;
   margin-bottom: 1rem;
   min-height: 3rem; /* Menjaga tinggi tetap untuk mencegah pergeseran */
 }
 
 .description p {
   font-size: 1.2rem;
-  color: #555;
+  color: #cfcfcf;
   line-height: 1.8;
   margin-bottom: 3.5rem;
 }
@@ -135,8 +136,8 @@
   padding: 1rem 2rem;
   font-size: 1rem;
   font-weight: bold;
-  background-color: #333;
-  color: #f8f8f8;
+  background-color: #444;
+  color: #e0e0e0;
   border: none;
   border-radius: 50px;
   cursor: pointer;
@@ -145,14 +146,14 @@
 
 .heroButton:hover {
   background-color: #555;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 4px 4px rgba(255, 255, 255, 0.5);
 }
 
 /* Teks Animasi */
 .animateText {
   font-size: 2.5rem;
   font-weight: 800;
-  color: #333;
+  color: #ffffff;
   transition: opacity 0.5s ease-in-out;
   opacity: 1;
   min-height: 3rem; /* Menjaga tinggi tetap pada teks */
@@ -177,13 +178,13 @@
 
 .icon {
   font-size: 1.8rem;
-  color: #333;
+  color: #e0e0e0;
   transition: color 0.3s ease;
   cursor: pointer;
 }
 
 .icon:hover {
-  color: #007acc;
+  color: #66ccff;
 }
 
 /* Responsif untuk perangkat mobile */
@@ -193,8 +194,8 @@
   }
 
   .avatarImage {
-    width: 200px;
-    height: 200px;
+    width: 270px;
+    height: 270px;
   }
 
   .description h1 {

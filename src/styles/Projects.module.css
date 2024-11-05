@@ -2,14 +2,14 @@
 
 .projects {
   padding: 2rem 2rem 6rem;
-  background-color: #f2f2f2; /* Warna abu lembut yang konsisten */
+  background-color: #1e1e1e; /* Warna abu lembut yang konsisten */
   text-align: center;
 }
 
 .title {
   font-size: 2.5rem;
   font-weight: bold;
-  color: #333; /* Teks gelap agar kontras */
+  color: #ffffff; /* Teks gelap agar kontras */
   margin-bottom: 3rem;
 }
 
@@ -28,13 +28,18 @@
   position: relative;
   overflow: hidden;
   border-radius: 8px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  background-color: #3a3a3a; /* Slightly lighter gray for card */
+  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.4);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  -webkit-transition: transform 0.3s ease, box-shadow 0.3s ease;
+  -moz-transition: transform 0.3s ease, box-shadow 0.3s ease;
+  -ms-transition: transform 0.3s ease, box-shadow 0.3s ease;
+  -o-transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
 }
 
 .imageContainer {
@@ -61,8 +66,8 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.6); /* Overlay gelap untuk kontras */
-  color: #fff; /* Teks putih untuk overlay */
+  background: rgba(0, 0, 0, 0.7); /* Darker overlay untuk kontras */
+  color: #ffffff; /* Teks putih untuk overlay */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -86,16 +91,16 @@
   font-size: 1rem;
   padding: 0 1rem;
   text-align: center;
-  color: #ddd; /* Teks abu untuk deskripsi */
+  color: #cccccc; /* Teks abu untuk deskripsi */
 }
 
 .caption {
   font-size: 1rem;
   font-weight: bold;
-  color: #333; /* Warna teks gelap untuk caption */
+  color: #e0e0e0; /* Warna teks gelap untuk caption */
   margin-top: 1rem;
   text-align: center;
-  background-color: #f2f2f2; /* Latar belakang putih untuk caption */
+  background-color: #3a3a3a; /* Latar belakang putih untuk caption */
   padding: 0.5rem 1rem; /* Padding agar terlihat lebih rapi */
   border-radius: 4px; /* Border radius untuk kesan modern */
   display: inline-block; /* Agar ukuran sesuai dengan teks */
