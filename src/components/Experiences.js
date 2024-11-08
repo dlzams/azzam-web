@@ -1,5 +1,6 @@
 // src/components/Experiences.js
-import React from "react";
+"use client";
+import React, { useEffect, useRef } from "react";
 import styles from "../styles/Experiences.module.css";
 
 const experiences = [
@@ -75,9 +76,30 @@ const experiences = [
 ];
 
 const Experiences = () => {
+  const cardRefs = useRef([]); // Gunakan array ref untuk setiap card
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add(styles.scrollFadeIn);
+            observer.unobserve(entry.target); // Hentikan pengamatan setelah animasi
+          }
+        });
+      },
+      { threshold: 0.1 }
+    );
+
+    cardRefs.current.forEach((ref) => {
+      if (ref) observer.observe(ref);
+    });
+
+    return () => observer.disconnect();
+  }, []);
+
   return (
     <section id="experiences" className={styles.experiences}>
-      {/* Bubble Dekoratif */}
       <div className={styles.bubble1}></div>
       <div className={styles.bubble2}></div>
       <div className={styles.bubble3}></div>
@@ -87,13 +109,19 @@ const Experiences = () => {
       <h2 className={styles.title}>Experiences</h2>
       <div className={styles.timeline}>
         {experiences.map((exp, index) => (
-          <div key={index} className={styles.card}>
+          <div
+            key={index}
+            className={`${styles.card} ${styles.hidden}`} // Tambahkan kelas hidden awalnya
+            ref={(el) => (cardRefs.current[index] = el)}
+          >
             <div className={styles.header}>
               <h3 className={styles.jobTitle}>{exp.title}</h3>
               <img src={exp.image} alt={exp.title} className={styles.image} />
             </div>
             <p className={styles.company}>{exp.company}</p>
-            <p className={styles.date}>{exp.date}</p>
+            <p className={styles.date}>
+              <span className={styles.calendarIcon}>📅</span> {exp.date}
+            </p>
             <ul className={styles.description}>
               {exp.description.map((point, i) => (
                 <li key={i}>{point}</li>

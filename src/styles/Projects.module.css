@@ -105,3 +105,15 @@
   border-radius: 4px; /* Border radius untuk kesan modern */
   display: inline-block; /* Agar ukuran sesuai dengan teks */
 }
+
+/* Animasi Scroll */
+.hidden {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.scrollFadeIn {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}

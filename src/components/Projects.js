@@ -1,6 +1,7 @@
-// src/components/Projects.js
-import React from "react";
-import Link from "next/link"; // Import Link dari Next.js
+"use client";
+
+import React, { useEffect, useRef } from "react";
+import Link from "next/link";
 import styles from "../styles/Projects.module.css";
 
 const projects = [
@@ -16,12 +17,12 @@ const projects = [
     description: "Built with Laravel, TailwindCSS, and Firebase",
     imageUrl: "/abpweb.jpg",
     caption: "BaroCars Website-Based",
-    url: "https://barocars.up.railway.app/", // Tambahkan URL untuk setiap proyek
+    url: "https://barocars.up.railway.app/",
   },
   {
     title: "Detection User Mental Health",
     description:
-      "Built with Kotlin, TensorFlow, and Natural Languange Processing",
+      "Built with Kotlin, TensorFlow, and Natural Language Processing",
     imageUrl: "/sereluna.jpg",
     caption: "SereLuna Mobile-Based using AI",
     url: "https://github.com/dlzams/SereLunaApp",
@@ -43,8 +44,7 @@ const projects = [
     url: "https://github.com/dlzams/cnn-images",
   },
   {
-    title:
-      "Implementation of a data structure specifically designed to store and manage user history.",
+    title: "Data Structure - Implement Double Linked List",
     description:
       "The advantages of this approach include efficient navigation both forward and backward, providing an optimal storage solution for application or project development.",
     imageUrl: "/strukdat.jpg",
@@ -54,6 +54,28 @@ const projects = [
 ];
 
 const Projects = () => {
+  const cardRefs = useRef([]);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add(styles.scrollFadeIn);
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.1 }
+    );
+
+    cardRefs.current.forEach((ref) => {
+      if (ref) observer.observe(ref);
+    });
+
+    return () => observer.disconnect();
+  }, []);
+
   return (
     <section id="projects" className={styles.projects}>
       <h2 className={styles.title}>My Projects</h2>
@@ -67,7 +89,10 @@ const Projects = () => {
               passHref
             >
               <a className={styles.cardLink}>
-                <div className={styles.card}>
+                <div
+                  className={`${styles.card} ${styles.hidden}`}
+                  ref={(el) => (cardRefs.current[index] = el)}
+                >
                   <div className={styles.imageContainer}>
                     <img
                       src={project.imageUrl}
@@ -93,7 +118,10 @@ const Projects = () => {
               rel="noopener noreferrer"
               className={styles.cardLink}
             >
-              <div className={styles.card}>
+              <div
+                className={`${styles.card} ${styles.hidden}`}
+                ref={(el) => (cardRefs.current[index] = el)}
+              >
                 <div className={styles.imageContainer}>
                   <img
                     src={project.imageUrl}

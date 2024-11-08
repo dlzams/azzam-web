@@ -1,3 +1,5 @@
+/* src/styles/About.module.css */
+
 .about-section {
   background-color: #1c1c1c;
   padding: 0.5rem;
@@ -5,6 +7,12 @@
   justify-content: center;
   min-height: 75vh;
   padding-bottom: 5rem;
+}
+
+.scrollFadeIn {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
 }
 
 .about-container {
@@ -21,14 +29,16 @@
   flex: 1;
   display: flex;
   justify-content: center;
+  opacity: 0;
+  transform: translateY(20px);
 }
 
 .about-image {
   border-radius: 30px;
   box-shadow: 0px 4px 12px rgba(255, 255, 255, 0.925);
   object-fit: cover;
-  width: 100%; /* Mengatur lebar penuh agar responsif */
-  height: auto; /* Mengatur tinggi otomatis untuk mempertahankan rasio */
+  width: 100%;
+  height: auto;
 }
 
 /* Right Side: Content */
@@ -44,6 +54,8 @@
   font-weight: bold;
   color: #ffffff;
   margin-top: 0.5rem;
+  opacity: 0;
+  transform: translateY(20px);
 }
 
 .about-description {
@@ -51,6 +63,8 @@
   line-height: 1.6;
   color: #cfcfcf;
   text-align: justify;
+  opacity: 0;
+  transform: translateY(20px);
 }
 
 /* Skills Section */
@@ -58,6 +72,8 @@
   margin-top: 2rem;
   padding-top: 1rem;
   border-top: 1px solid #333;
+  opacity: 0;
+  transform: translateY(20px);
 }
 
 .skills-title {
@@ -83,10 +99,8 @@
   text-align: left;
   font-size: 1rem;
   color: #e0e0e0;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  -ms-border-radius: 10px;
-  -o-border-radius: 10px;
+  opacity: 0;
+  transform: translateY(20px);
 }
 
 .toggle-button {
@@ -106,45 +120,49 @@
 /* Responsif untuk perangkat mobile */
 @media (max-width: 768px) {
   .about-container {
-    flex-direction: column; /* Ubah ke kolom vertikal */
+    flex-direction: column;
     align-items: center;
     text-align: center;
+    gap: 2rem; /* Kurangi jarak antar elemen untuk layar kecil */
   }
 
   .about-image-container {
-    width: 100%; /* Pastikan gambar penuh lebar pada layar kecil */
-    margin-bottom: 0rem; /* Tambahkan margin bawah agar lebih rapi */
-    margin-top: 1.5rem;
+    width: 80%; /* Kurangi ukuran gambar di perangkat kecil */
+    margin-bottom: 1.5rem;
   }
 
   .about-image {
-    width: 80%; /* Kurangi ukuran gambar di perangkat kecil untuk proporsi */
-    max-width: 300px;
+    width: 100%;
+    max-width: 250px; /* Atur batas maksimum gambar */
     height: auto;
-  }
-
-  .about-content {
-    align-items: center;
   }
 
   .about-title {
     font-size: 2rem; /* Kurangi ukuran font judul pada layar kecil */
-    padding-bottom: 0rem;
+    margin-top: 1rem;
   }
 
   .about-description {
     font-size: 0.95rem; /* Kurangi ukuran font deskripsi */
-    text-align: justify; /* Tetap rata kanan-kiri pada mobile */
+    line-height: 1.5;
     padding: 0.5rem;
   }
 
+  .skills-title {
+    font-size: 1.25rem; /* Kurangi ukuran font judul keterampilan */
+  }
+
   .skills-list {
-    grid-template-columns: 1fr; /* Atur grid menjadi satu kolom */
-    gap: 0.8rem; /* Kurangi gap antar skill pada layar kecil */
+    grid-template-columns: 1fr; /* Atur grid menjadi satu kolom pada layar kecil */
+    gap: 0.8rem; /* Kurangi jarak antar elemen keterampilan */
   }
 
   .skills-list li {
-    font-size: 0.95rem; /* Kurangi ukuran font pada layar kecil */
+    font-size: 0.9rem; /* Kurangi ukuran font pada keterampilan */
     padding: 0.8rem;
+  }
+
+  .toggle-button {
+    font-size: 0.9rem; /* Kurangi ukuran font pada tombol toggle */
   }
 }

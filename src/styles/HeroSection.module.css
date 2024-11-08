@@ -10,6 +10,14 @@
   background-color: #1c1c1c;
   min-height: 100vh;
   padding-bottom: 0.3rem;
+  opacity: 0; /* Awalnya tersembunyi untuk animasi scroll */
+  transform: translateY(20px); /* Offset untuk animasi scroll */
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.scrollFadeIn {
+  opacity: 1 !important; /* Tampilkan elemen */
+  transform: translateY(0) !important; /* Kembalikan ke posisi asli */
 }
 
 /* Animasi Partikel */
@@ -80,8 +88,8 @@
   border-radius: 50%;
   object-fit: cover;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
-  position: relative; /* Menambahkan positioning untuk menggunakan z-index */
-  z-index: 10; /* Pastikan nilainya lebih tinggi dari elemen lain */
+  position: relative;
+  z-index: 10;
 }
 
 /* Kelas untuk flip card */
@@ -122,14 +130,14 @@
   font-weight: 800;
   color: #ffffff;
   margin-bottom: 1rem;
-  min-height: 3rem; /* Menjaga tinggi tetap untuk mencegah pergeseran */
+  min-height: 3rem;
 }
 
 .description p {
   font-size: 1.2rem;
   color: #cfcfcf;
   line-height: 1.8;
-  margin-bottom: 3.5rem;
+  margin-bottom: 1rem;
 }
 
 .heroButton {
@@ -156,24 +164,26 @@
   color: #ffffff;
   transition: opacity 0.5s ease-in-out;
   opacity: 1;
-  min-height: 3rem; /* Menjaga tinggi tetap pada teks */
+  min-height: 3rem;
+  min-height: 3rem; /* Sesuaikan dengan tinggi teks terpanjang */
+  line-height: 0.95; /* Mengatur jarak baris untuk memastikan teks tetap konsisten */
 }
 
-.animateText.fade-out {
+.fadeOut {
   opacity: 0;
 }
 
-.animateText.fade-in {
+.fadeIn {
   opacity: 1;
 }
 
-/* Tambahkan di bawah .heroButton atau di tempat yang sesuai dalam file CSS */
-
+/* Social Icons */
 .socialIcons {
   display: flex;
   justify-content: center;
   gap: 1.5rem;
-  margin-top: 1.5rem;
+  margin-top: 1rem;
+  margin-bottom: 1.2rem;
 }
 
 .icon {
@@ -200,7 +210,7 @@
 
   .description h1 {
     font-size: 2rem;
-    min-height: 2.5rem; /* Menyesuaikan tinggi tetap pada mobile */
+    min-height: 2.5rem;
   }
 
   .description p {

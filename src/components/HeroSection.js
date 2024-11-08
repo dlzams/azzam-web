@@ -1,3 +1,4 @@
+// src/components/HeroSection.js
 "use client";
 
 import React, { useEffect, useState, useRef } from "react";
@@ -8,15 +9,14 @@ import styles from "../styles/HeroSection.module.css";
 const HeroSection = () => {
   const [displayText, setDisplayText] = useState("Muhammad Abdullah Azzam");
   const textRef = useRef(null); // Menyimpan referensi ke elemen animasi teks
+  const heroRef = useRef(null); // Referensi untuk elemen HeroSection untuk animasi scroll
 
   useEffect(() => {
+    // Interval untuk mengganti teks
     const intervalId = setInterval(() => {
-      // Menambahkan kelas fadeOut sebelum mengganti teks
       if (textRef.current) {
         textRef.current.classList.add(styles.fadeOut);
       }
-
-      // Ganti teks setelah animasi fadeOut selesai (250 ms)
       const timeoutId = setTimeout(() => {
         setDisplayText((prev) =>
           prev === "Muhammad Abdullah Azzam"
@@ -24,13 +24,10 @@ const HeroSection = () => {
             : "Muhammad Abdullah Azzam"
         );
 
-        // Setelah teks diganti, tambahkan kelas fadeIn
         if (textRef.current) {
           textRef.current.classList.remove(styles.fadeOut);
           textRef.current.classList.add(styles.fadeIn);
         }
-
-        // Hapus kelas fadeIn setelah beberapa waktu untuk persiapan animasi berikutnya
         setTimeout(() => {
           if (textRef.current) {
             textRef.current.classList.remove(styles.fadeIn);
@@ -39,13 +36,41 @@ const HeroSection = () => {
       }, 250);
 
       return () => clearTimeout(timeoutId);
-    }, 1500); // Ganti teks setiap 1.5 detik
+    }, 1500);
 
     return () => clearInterval(intervalId);
   }, []);
 
+  useEffect(() => {
+    // Intersection Observer untuk animasi scroll
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add(styles.scrollFadeIn);
+            observer.unobserve(entry.target); // Hanya animasi sekali
+          }
+        });
+      },
+      { threshold: 0.3 }
+    );
+
+    if (heroRef.current) {
+      observer.observe(heroRef.current);
+    }
+
+    return () => {
+      if (heroRef.current) {
+        observer.unobserve(heroRef.current);
+      }
+    };
+  }, []);
+
   return (
-    <section className={styles.heroSection}>
+    <section
+      className={`${styles.heroSection} ${styles.scrollFadeIn}`}
+      ref={heroRef}
+    >
       <div className={styles.content}>
         <div className={styles.avatar}>
           <div className={styles.flipCard}>
@@ -68,7 +93,6 @@ const HeroSection = () => {
           </div>
         </div>
         <div className={styles.description}>
-          {/* Gunakan ref untuk elemen animateText */}
           <h1 className={`${styles.animateText}`} ref={textRef}>
             {displayText}
           </h1>
@@ -78,9 +102,6 @@ const HeroSection = () => {
             Deep Learning, Data Analysis, and Front-End Web Development.
           </p>
         </div>
-        <Link href="#contact">
-          <button className={styles.heroButton}>Contact Me →</button>
-        </Link>
         <div className={styles.socialIcons}>
           <a
             href="https://github.com/dlzams"
@@ -97,6 +118,9 @@ const HeroSection = () => {
             <FaLinkedin className={styles.icon} />
           </a>
         </div>
+        <Link href="#contact">
+          <button className={styles.heroButton}>Contact Me →</button>
+        </Link>
       </div>
     </section>
   );

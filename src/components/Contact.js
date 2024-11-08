@@ -1,5 +1,5 @@
 "use client";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import emailjs from "@emailjs/browser";
 import Image from "next/image";
 import styles from "../styles/Contact.module.css";
@@ -7,6 +7,7 @@ import styles from "../styles/Contact.module.css";
 const Contact = () => {
   const [formStatus, setFormStatus] = useState("");
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const formRef = useRef();
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -24,14 +25,12 @@ const Contact = () => {
       return;
     }
 
-    // Data yang akan dikirim ke template EmailJS
     const templateParams = {
       from_name: name,
       reply_to: email,
       message: message,
     };
 
-    // Mengirim email menggunakan EmailJS
     emailjs
       .send(
         "service_0clwpqc",
@@ -40,15 +39,14 @@ const Contact = () => {
         "V8c8Gx87NBpoe8N1o"
       )
       .then(
-        (response) => {
+        () => {
           setFormStatus("success");
           setIsSubmitting(false);
           e.target.reset(); // Reset form fields
         },
-        (error) => {
+        () => {
           setFormStatus("error");
           setIsSubmitting(false);
-          console.error("FAILED...", error);
         }
       );
   };
@@ -56,15 +54,27 @@ const Contact = () => {
   useEffect(() => {
     if (formStatus) {
       const timer = setTimeout(() => setFormStatus(""), 5000);
-      return () => clearTimeout(timer); // Clean up
+      return () => clearTimeout(timer);
     }
   }, [formStatus]);
 
   useEffect(() => {
-    if (formStatus === "success") {
-      window.scrollTo({ top: document.body.scrollHeight, behavior: "smooth" });
-    }
-  }, [formStatus]);
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add(styles.scrollFadeIn);
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.1 }
+    );
+
+    if (formRef.current) observer.observe(formRef.current);
+
+    return () => observer.disconnect();
+  }, []);
 
   return (
     <section id="contact" className={styles.contactSection}>
@@ -79,14 +89,17 @@ const Contact = () => {
           Please ensure all fields are filled out correctly.
         </p>
       )}
-      <div className={styles.contactContainer}>
+      <div
+        className={`${styles.contactContainer} ${styles.hidden}`}
+        ref={formRef}
+      >
         <div className={styles.imageWrapper}>
           <Image
-            src="/contactimg.jpg" // Pastikan gambar ada di dalam folder public
+            src="/contactimg.jpg"
             alt="Contact"
             className={styles.contactImage}
-            width={300} // Tambahkan lebar
-            height={400} // Tambahkan tinggi
+            width={300}
+            height={400}
           />
         </div>
         <form className={styles.form} onSubmit={handleSubmit}>
