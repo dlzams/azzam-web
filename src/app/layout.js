@@ -18,18 +18,23 @@ const geistMono = localFont({
 });
 
 export const metadata = {
-  title: "Muh Azzam",
-  description: "personal website by Azzam",
+  title: "Muh Azzam - Personal Website",
+  description:
+    "Explore the personal website of Muh Azzam, showcasing his skills in security analysis, machine learning, and web development. Discover projects, experiences, and certifications.",
+  keywords:
+    "Muhammad Abdullah Azzam, Telkom, Telkom University, Azzam, Informatika, Telkomsigma, Computer Science, Security Analysis, Machine Learning, Web Development, Portfolio",
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-        {/* Tambahkan favicon secara eksplisit di sini */}
         <link rel="icon" href="/favicon.ico" />
+        <meta name="description" content={metadata.description} />
+        <meta name="keywords" content={metadata.keywords} />
+        <title>{metadata.title}</title>
       </head>
-      <body>
+      <body className={`${geistSans.variable}`}>
         <main>{children}</main>
         <ScrollToTop />
       </body>
