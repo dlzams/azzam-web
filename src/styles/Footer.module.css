@@ -1,7 +1,7 @@
 .footer {
   background-color: #1e1e1e;
   color: #e0e0e0;
-  padding: 1.5rem 0rem;
+  padding: 1.5rem 0;
   text-align: center;
 }
 
@@ -21,11 +21,12 @@
 .icon {
   font-size: 1.5rem;
   color: #e0e0e0;
-  transition: color 0.3s ease;
+  transition: color 0.3s ease, transform 0.3s ease; /* Tambahkan animasi transform */
 }
 
 .icon:hover {
   color: #66ccff;
+  transform: scale(1.1); /* Animasi zoom saat hover */
 }
 
 .info {
@@ -35,17 +36,41 @@
 }
 
 .link {
-  /* Gantikan selector a dengan .link */
   color: #66ccff;
   text-decoration: none;
+  transition: color 0.3s ease; /* Tambahkan animasi perubahan warna */
 }
 
 .link:hover {
   text-decoration: underline;
 }
 
+.highlight {
+  color: #66ccff;
+  font-style: italic;
+}
+
 .copyright {
   font-size: 0.85rem;
   margin: 0.5rem 0;
   color: #aaaaaa;
+}
+
+/* Responsif untuk perangkat kecil */
+@media (max-width: 768px) {
+  .socialMedia {
+    gap: 1rem;
+  }
+
+  .icon {
+    font-size: 1.3rem;
+  }
+
+  .info {
+    font-size: 0.85rem;
+  }
+
+  .copyright {
+    font-size: 0.8rem;
+  }
 }

@@ -11,7 +11,7 @@ const Footer = () => {
             target="_blank"
             rel="noopener noreferrer"
             aria-label="GitHub"
-            className={styles.link} // Tambahkan class ini
+            className={styles.link}
           >
             <FaGithub className={styles.icon} />
           </a>
@@ -20,18 +20,19 @@ const Footer = () => {
             target="_blank"
             rel="noopener noreferrer"
             aria-label="LinkedIn"
-            className={styles.link} // Tambahkan class ini
+            className={styles.link}
           >
             <FaLinkedin className={styles.icon} />
           </a>
         </div>
-        <p className={styles.copyright}>
-          © {new Date().getFullYear()} Muhammad Abdullah Azzam. All rights
-          reserved.
-        </p>
         <p className={styles.info}>
-          Built with Next.js and styled with CSS Modules. <br />{" "}
-          {/* Tambahkan class */}
+          Built with <span className={styles.highlight}>Next.js</span> and
+          styled with <span className={styles.highlight}>CSS Modules</span>.
+        </p>
+        <p className={styles.copyright}>
+          © {new Date().getFullYear()}{" "}
+          <span className={styles.highlight}>Muhammad Abdullah Azzam</span>. All
+          rights reserved.
         </p>
       </div>
     </footer>
