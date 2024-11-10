@@ -182,9 +182,10 @@ const certificationsData = [
     imageUrl: "/certifications/certf-14.jpg",
     title: "Unsupervised Learning, Recommenders, Reinforcement Learning",
     description: [
-      "Dasar-dasar pembelajaran tanpa pengawasan.",
-      "Menggunakan teknik rekomendasi dan reinforcement learning.",
-      "Keterampilan yang didapat: Unsupervised learning.",
+      "Use unsupervised learning techniques for unsupervised learning: including clustering and anomaly detection.",
+      "Build a deep reinforcement learning model.",
+      "Build recommender systems with a collaborative filtering approach and a content-based deep learning method.",
+      "Anomaly Detection, Unsupervised Learning, Reinforcement Learning, Collaborative Filtering, and Recommender Systems.",
     ],
     credentialUrl:
       "https://www.coursera.org/account/accomplishments/verify/VCM9A89YPPBU",
@@ -194,9 +195,9 @@ const certificationsData = [
     imageUrl: "/certifications/certf-15.jpg",
     title: "Supervised Machine Learning: Regression and Classification",
     description: [
-      "Dasar-dasar supervised learning.",
-      "Penerapan regresi dan klasifikasi dalam ML.",
-      "Keterampilan yang didapat: Supervised learning.",
+      "Build machine learning models in Python using popular machine learning libraries NumPy & scikit-learn.",
+      "Build & train supervised machine learning models for prediction & binary classification tasks, including linear regression & logistic regression.",
+      "Linear Regressio, Regularization to Avoid Overfitting, Logistic Regression for Classification, Gradient Descent, and Supervised Learning.",
     ],
     credentialUrl:
       "https://www.coursera.org/account/accomplishments/verify/FHQ4386NGQCQ",
@@ -206,9 +207,11 @@ const certificationsData = [
     imageUrl: "/certifications/certf-16.jpg",
     title: "Machine Learning",
     description: [
-      "Dasar-dasar supervised learning.",
-      "Penerapan regresi dan klasifikasi dalam ML.",
-      "Keterampilan yang didapat: Supervised learning.",
+      "Logistic Regression.",
+      "Artificial Neural Network.",
+      "Linear Regression.",
+      "Decision Trees",
+      "Recommender Systems",
     ],
     credentialUrl:
       "https://www.coursera.org/account/accomplishments/specialization/E64XFY5YAFST",
@@ -219,9 +222,10 @@ const certificationsData = [
     title:
       "Introduction to TensorFlow for Artificial Intelligence, Machine Learning, and Deep Learning",
     description: [
-      "Dasar-dasar supervised learning.",
-      "Penerapan regresi dan klasifikasi dalam ML.",
-      "Keterampilan yang didapat: Supervised learning.",
+      "Learn best practices for using TensorFlow, a popular open-source machine learning framework.",
+      "Train a neural network for a computer vision application.",
+      "Build a basic neural network in TensorFlow.",
+      "Understand how to use convolutions to improve your neural network",
     ],
     credentialUrl:
       "https://www.coursera.org/account/accomplishments/verify/W6PXGFJZU4NM",
@@ -231,9 +235,11 @@ const certificationsData = [
     imageUrl: "/certifications/certf-18.jpg",
     title: "Convolutional Neural Networks in TensorFlow",
     description: [
-      "Dasar-dasar supervised learning.",
-      "Penerapan regresi dan klasifikasi dalam ML.",
-      "Keterampilan yang didapat: Supervised learning.",
+      "Handle real-world image data.",
+      "Explore strategies to prevent overfitting, including augmentation and dropout.",
+      "Plot loss and accuracy.",
+      "Learn transfer learning and how learned features can be extracted from models",
+      "Tensorflow, Convolutional Neural Network, Transfer Learning, Dropouts, and Data Augmentation.",
     ],
     credentialUrl:
       "https://www.coursera.org/account/accomplishments/verify/6HCMV2489R5R",
@@ -243,9 +249,10 @@ const certificationsData = [
     imageUrl: "/certifications/certf-19.jpg",
     title: "Advanced Learning Algorithms",
     description: [
-      "Dasar-dasar supervised learning.",
-      "Penerapan regresi dan klasifikasi dalam ML.",
-      "Keterampilan yang didapat: Supervised learning.",
+      "Build and train a neural network with TensorFlow to perform multi-class classification.",
+      "Build and use decision trees and tree ensemble methods, including random forests and boosted trees.",
+      "Apply best practices for machine learning development so that the models generalize to data and tasks in the real world.",
+      "Tensorflow, Advice for Model Development, Artificial Neural Network, Xgboost, and Tree Ensembles.",
     ],
     credentialUrl:
       "https://www.coursera.org/account/accomplishments/verify/RGWEXWX4HPQL",
@@ -255,9 +262,10 @@ const certificationsData = [
     imageUrl: "/certifications/certf-20.jpg",
     title: "TensorFlow: Data and Deployment",
     description: [
-      "Dasar-dasar supervised learning.",
-      "Penerapan regresi dan klasifikasi dalam ML.",
-      "Keterampilan yang didapat: Supervised learning.",
+      "Run models in your browser using TensorFlow.js.",
+      "Access, organize, and process training data more easily using TensorFlow Data Services.",
+      "Prepare and deploy models on mobile devices using TensorFlow Lite.",
+      "Explore four advanced deployment scenarios using TensorFlow Serving, TensorFlow Hub, and TensorBoard.",
     ],
     credentialUrl:
       "https://www.coursera.org/account/accomplishments/specialization/V24B7YKR9MYX",
@@ -267,9 +275,10 @@ const certificationsData = [
     imageUrl: "/certifications/certf-21.jpg",
     title: "TensorFlow: Advanced Techniques",
     description: [
-      "Dasar-dasar supervised learning.",
-      "Penerapan regresi dan klasifikasi dalam ML.",
-      "Keterampilan yang didapat: Supervised learning.",
+      "Understand the underlying basis of the Functional API and build exotic non-sequential model types, custom loss functions, and layers.",
+      "Practice object detection, image segmentation, and visual interpretation of convolutions.",
+      "Learn optimization and how to use GradientTape & Autograph, optimize training in different environments with multiple processors and chip types.",
+      "Explore generative deep learning, and how AIs can create new content, from Style Transfer through Auto Encoding and VAEs to GANs.",
     ],
     credentialUrl:
       "https://www.coursera.org/account/accomplishments/specialization/VX9ERJBG8RBQ",
@@ -279,9 +288,9 @@ const certificationsData = [
     imageUrl: "/certifications/certf-22.jpg",
     title: "Structuring Machine Learning Projects",
     description: [
-      "Dasar-dasar supervised learning.",
-      "Penerapan regresi dan klasifikasi dalam ML.",
-      "Keterampilan yang didapat: Supervised learning.",
+      "Decision-Making.",
+      "Inductive Transfer.",
+      "Multi-Task Learning.",
     ],
     credentialUrl:
       "https://www.coursera.org/account/accomplishments/verify/PF8UXXH9LC9X",
@@ -291,9 +300,10 @@ const certificationsData = [
     imageUrl: "/certifications/certf-23.jpg",
     title: "Sequences, Time Series and Prediction",
     description: [
-      "Dasar-dasar supervised learning.",
-      "Penerapan regresi dan klasifikasi dalam ML.",
-      "Keterampilan yang didapat: Supervised learning.",
+      "Solve time series and forecasting problems in TensorFlow.",
+      "Explore how RNNs and ConvNets can be used for predictions.",
+      "Prepare data for time series learning using best practices.",
+      "Build a sunspot prediction model using real-world data.",
     ],
     credentialUrl:
       "https://www.coursera.org/account/accomplishments/verify/H5MC5EJSK8B3",
@@ -303,9 +313,10 @@ const certificationsData = [
     imageUrl: "/certifications/certf-24.jpg",
     title: "Natural Language Processing in TensorFlow",
     description: [
-      "Dasar-dasar supervised learning.",
-      "Penerapan regresi dan klasifikasi dalam ML.",
-      "Keterampilan yang didapat: Supervised learning.",
+      "Build natural language processing systems using TensorFlow.",
+      "Apply RNNs, GRUs, and LSTMs in TensorFlow.",
+      "Process text, including tokenization and representing sentences as vectors.",
+      "Train LSTMs on existing text to create original poetry and more",
     ],
     credentialUrl:
       "https://www.coursera.org/account/accomplishments/verify/XE5AN5P5YMY7",
@@ -315,9 +326,9 @@ const certificationsData = [
     imageUrl: "/certifications/certf-25.jpg",
     title: "Generative Deep Learning with TensorFlow",
     description: [
-      "Dasar-dasar supervised learning.",
-      "Penerapan regresi dan klasifikasi dalam ML.",
-      "Keterampilan yang didapat: Supervised learning.",
+      "Variational AutoEncoders, Auto Encoders.",
+      "Generative Adversarial Networks.",
+      "Neural Style Transfer.",
     ],
     credentialUrl:
       "https://www.coursera.org/account/accomplishments/verify/7XV48NSLYBZL",
@@ -327,9 +338,10 @@ const certificationsData = [
     imageUrl: "/certifications/certf-26.jpg",
     title: "Generative AI for Everyone",
     description: [
-      "Dasar-dasar supervised learning.",
-      "Penerapan regresi dan klasifikasi dalam ML.",
-      "Keterampilan yang didapat: Supervised learning.",
+      "What generative AI is and how it works, its common use cases, and what this technology can and cannot do.",
+      "The potential opportunities and risks that generative AI technologies present to individuals, businesses, and society.",
+      "How to think through the lifecycle of a generative AI project, from conception to launch, including how to build effective prompts.",
+      "Generative AI Tools, Large Language Models, AI strategy, Generative AI, and AI Productivity.",
     ],
     credentialUrl:
       "https://www.coursera.org/account/accomplishments/verify/XUXFHH5FCA5V",
@@ -339,9 +351,10 @@ const certificationsData = [
     imageUrl: "/certifications/certf-27.jpg",
     title: "Device-based Models with TensorFlow Lite",
     description: [
-      "Dasar-dasar supervised learning.",
-      "Penerapan regresi dan klasifikasi dalam ML.",
-      "Keterampilan yang didapat: Supervised learning.",
+      "Prepare models for battery-operated devices.",
+      "Deploy models on embedded systems like Raspberry Pi and microcontrollers.",
+      "Execute models on Android and iOS platforms.",
+      "Tensorflow, Object Detection, Machine Learning, Mathematical Optimization, and TensorFlow Lite.",
     ],
     credentialUrl:
       "https://www.coursera.org/account/accomplishments/verify/9GPJBK9TQSD4",
@@ -351,9 +364,9 @@ const certificationsData = [
     imageUrl: "/certifications/certf-28.jpg",
     title: "DeepLearning.AI TensorFlow Developer",
     description: [
-      "Dasar-dasar supervised learning.",
-      "Penerapan regresi dan klasifikasi dalam ML.",
-      "Keterampilan yang didapat: Supervised learning.",
+      "RNNs, Computer Vision, Convolutional Neural Network, and Forecasting.",
+      "Transfer Learning, Time Series, Machine Learning, and Tokenization.",
+      "Dropouts, Natural Language Processing, TensorFlow, and Augmentation.",
     ],
     credentialUrl:
       "https://www.coursera.org/account/accomplishments/specialization/GXAKEPSRSRNP",
@@ -363,9 +376,10 @@ const certificationsData = [
     imageUrl: "/certifications/certf-29.jpg",
     title: "Data Pipelines with TensorFlow Data Services",
     description: [
-      "Dasar-dasar supervised learning.",
-      "Penerapan regresi dan klasifikasi dalam ML.",
-      "Keterampilan yang didapat: Supervised learning.",
+      "Perform efficient ETL tasks using Tensorflow Data Services APIs.",
+      "Use different modules and functions of the TFDS API to prepare the data for training pipelines.",
+      "Construct train/validation/test splits of any dataset - either custom or present in TensorFlow Hub Dataset library - using Splits API.",
+      "Identify bottlenecks in your input pipelines and increase the workflow efficiency by input parallelization",
     ],
     credentialUrl:
       "https://www.coursera.org/account/accomplishments/verify/VY5KXNEA8YFZ",
@@ -375,9 +389,8 @@ const certificationsData = [
     imageUrl: "/certifications/certf-30.jpg",
     title: "Custom and Distributed Training with TensorFlow",
     description: [
-      "Dasar-dasar supervised learning.",
-      "Penerapan regresi dan klasifikasi dalam ML.",
-      "Keterampilan yang didapat: Supervised learning.",
+      "Distribution Strategies, GradientTape for Optimization.",
+      "Custom Training Loops, Basic Tensor Functionality.",
     ],
     credentialUrl:
       "https://www.coursera.org/account/accomplishments/verify/7TXFR9E9H5AJ",
@@ -387,9 +400,8 @@ const certificationsData = [
     imageUrl: "/certifications/certf-31.jpg",
     title: "Custom Models, Layers, and Loss Functions with TensorFlow",
     description: [
-      "Dasar-dasar supervised learning.",
-      "Penerapan regresi dan klasifikasi dalam ML.",
-      "Keterampilan yang didapat: Supervised learning.",
+      "Functional API, Custom and Exotic Models with Functional API.",
+      "Custom Loss Functions, Custom Layers.",
     ],
     credentialUrl:
       "https://www.coursera.org/account/accomplishments/verify/P6MY975HL4S6",
@@ -399,9 +411,10 @@ const certificationsData = [
     imageUrl: "/certifications/certf-32.jpg",
     title: "Browser-based Models with TensorFlow.js",
     description: [
-      "Dasar-dasar supervised learning.",
-      "Penerapan regresi dan klasifikasi dalam ML.",
-      "Keterampilan yang didapat: Supervised learning.",
+      "Train and run inference in a browser.",
+      "Handle data in a browser.",
+      "Build an object classification and recognition model using a webcam.",
+      "Tensorflow, Convolutional Neural Network, Object Detection, Machine Learning, and TensorFlow.js.",
     ],
     credentialUrl:
       "https://www.coursera.org/account/accomplishments/verify/J7RW8WRGUZ6C",
@@ -411,9 +424,11 @@ const certificationsData = [
     imageUrl: "/certifications/certf-33.jpg",
     title: "Advanced Deployment Scenarios with TensorFlow",
     description: [
-      "Dasar-dasar supervised learning.",
-      "Penerapan regresi dan klasifikasi dalam ML.",
-      "Keterampilan yang didapat: Supervised learning.",
+      "Use TensorFlow Serving to do inference over the web.",
+      "Evaluate how the models work and share model metadata using TensorBoard.",
+      "Navigate TensorFlow Hub, a repository of models that can use for transfer learning.",
+      "Explore federated learning and how to retrain deployed models while maintaining data privacy.",
+      "TensorBoard, Federated Learning, TensorFlow Serving, and TensorFlow Hub.",
     ],
     credentialUrl:
       "https://www.coursera.org/account/accomplishments/verify/MZH9GDN9V2DU",
@@ -423,9 +438,8 @@ const certificationsData = [
     imageUrl: "/certifications/certf-34.jpg",
     title: "Advanced Computer Vision with TensorFlow",
     description: [
-      "Dasar-dasar supervised learning.",
-      "Penerapan regresi dan klasifikasi dalam ML.",
-      "Keterampilan yang didapat: Supervised learning.",
+      "Salience, Image Segmentation, Model Interpretability.",
+      "Class Activation Maps, TensorFlow Object Detection API.",
     ],
     credentialUrl:
       "https://www.coursera.org/account/accomplishments/verify/QEK5C8FK6HCK",
