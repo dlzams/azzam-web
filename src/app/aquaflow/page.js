@@ -6,6 +6,7 @@ import React, { useState, useEffect } from "react";
 import styles from "./aquaflow.module.css";
 import Footer from "@/components/Footer";
 import ErrorBoundary from "../../components/ErrorBoundary";
+import "../globals.css";
 
 const AquaFlow = () => {
   const [isLoading, setIsLoading] = useState(true);
