@@ -76,7 +76,7 @@
   text-align: center;
   max-width: 900px;
   padding: 4rem;
-  padding-top: 0;
+  padding-top: 0rem;
   border-radius: 10px;
   background-color: #1c1c1c;
   color: #e0e0e0;
@@ -130,6 +130,7 @@
   font-weight: 800;
   color: #ffffff;
   margin-bottom: 1rem;
+  margin-top: 1rem;
   min-height: 3rem;
 }
 

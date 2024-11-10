@@ -5,7 +5,7 @@ import { useEffect } from "react";
 import { usePathname } from "next/navigation";
 import localFont from "next/font/local";
 import ScrollToTop from "../components/ScrollToTop";
-import "../styles/globals.css"; // Import CSS global
+import "./globals.css";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",

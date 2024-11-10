@@ -4,9 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import React, { useState, useEffect } from "react";
 import styles from "./aquaflow.module.css";
-import Footer from "@/components/Footer";
 import ErrorBoundary from "../../components/ErrorBoundary";
-import "../globals.css";
 
 const AquaFlow = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -391,77 +389,80 @@ const AquaFlow = () => {
       {/* Section: How It Works */}
       <section className={styles.section}>
         <h2>How It Works</h2>
-        <Image
-          src="/aquaflow/system-diagram1.jpg"
-          alt="System Diagram"
-          width={800}
-          height={400}
-          className={styles.imgdesign}
-        />
-        <Image
-          src="/aquaflow/system-diagram2.jpg"
-          alt="System Diagram"
-          width={800}
-          height={400}
-          className={styles.imgdesign}
-        />
-        <div className="system-explanation">
-          <h3>How the AquaFlow System Works</h3>
-          <ol>
-            <li>
-              <strong>Real-Time Monitoring:</strong>
-              The AquaFlow system is equipped with sensors like the DHT22 for
-              temperature and humidity, and soil moisture sensors to monitor the
-              environmental and soil conditions around the crops. These sensors
-              continuously collect data on critical parameters such as soil
-              moisture levels and ambient conditions, which are essential for
-              optimal irrigation. This data is then transmitted to the ESP32
-              microcontroller, which acts as the main controller for the system.
-              The ESP32 ensures that all relevant information is processed and
-              recorded in real time, allowing the system to adapt to changing
-              conditions effectively.
-            </li>
-            <li>
-              <strong>Data Processing:</strong>
-              Once the ESP32 receives data from the sensors, it processes this
-              information to make real-time decisions. The controller assesses
-              the current soil moisture and weather conditions to determine
-              whether the plants require watering. If the soil moisture level
-              falls below a predefined threshold, the ESP32 prepares the system
-              for irrigation by activating the relay connected to the water
-              pump. This data-driven decision-making process ensures water
-              efficiency by delivering irrigation only when necessary,
-              conserving resources, and optimizing plant growth.
-            </li>
-            <li>
-              <strong>Automatic Irrigation:</strong>
-              After the ESP32 has determined that irrigation is required, it
-              automatically activates the water pump via a relay module. The
-              pump draws water from a storage tank and delivers it to the crops
-              through connected pipes or a drip irrigation system. Additionally,
-              a solenoid valve is integrated into the system to regulate the
-              flow of water precisely. This valve opens or closes based on
-              commands from the ESP32, allowing water to be supplied only to the
-              designated areas needing irrigation. The automated irrigation
-              process minimizes human intervention, reduces labor costs, and
-              ensures consistent water delivery to the crops.
-            </li>
-            <li>
-              <strong>Remote Access:</strong>
-              The AquaFlow system leverages the Blynk application, allowing
-              farmers to monitor and control the irrigation system remotely via
-              a smartphone or other internet-enabled devices. The ESP32
-              microcontroller connects to the Blynk server over Wi-Fi, enabling
-              real-time updates and control access for the user. Through the
-              Blynk app, farmers can view the current status of the sensors
-              (e.g., temperature, humidity, and soil moisture levels) and
-              manually override the system if needed, such as starting or
-              stopping the pump directly from the app. This remote accessibility
-              enhances convenience and provides farmers with the flexibility to
-              manage irrigation schedules without needing to be on-site,
-              ultimately improving productivity and efficiency.
-            </li>
-          </ol>
+
+        {/* Wrapper for images in a row, positioned left */}
+        <div className={styles.imageRow}>
+          <Image
+            src="/aquaflow/system-diagram1.jpg"
+            alt="System Diagram 1"
+            width={400} /* Ukuran disesuaikan */
+            height={200}
+            className={styles.imgdesign}
+          />
+          <Image
+            src="/aquaflow/system-diagram2.jpg"
+            alt="System Diagram 2"
+            width={400} /* Ukuran disesuaikan */
+            height={200}
+            className={styles.imgdesign}
+          />
+        </div>
+
+        {/* Explanation Section */}
+        <div className={styles.systemExplanation}>
+          <p>
+            <strong>Real-Time Monitoring:</strong>
+            The AquaFlow system is equipped with sensors like the DHT22 for
+            temperature and humidity, and soil moisture sensors to monitor the
+            environmental and soil conditions around the crops. These sensors
+            continuously collect data on critical parameters such as soil
+            moisture levels and ambient conditions, which are essential for
+            optimal irrigation. This data is then transmitted to the ESP32
+            microcontroller, which acts as the main controller for the system.
+            The ESP32 ensures that all relevant information is processed and
+            recorded in real time, allowing the system to adapt to changing
+            conditions effectively.
+          </p>
+          <p>
+            <strong>Data Processing:</strong>
+            Once the ESP32 receives data from the sensors, it processes this
+            information to make real-time decisions. The controller assesses the
+            current soil moisture and weather conditions to determine whether
+            the plants require watering. If the soil moisture level falls below
+            a predefined threshold, the ESP32 prepares the system for irrigation
+            by activating the relay connected to the water pump. This
+            data-driven decision-making process ensures water efficiency by
+            delivering irrigation only when necessary, conserving resources, and
+            optimizing plant growth.
+          </p>
+          <p>
+            <strong>Automatic Irrigation:</strong>
+            After the ESP32 has determined that irrigation is required, it
+            automatically activates the water pump via a relay module. The pump
+            draws water from a storage tank and delivers it to the crops through
+            connected pipes or a drip irrigation system. Additionally, a
+            solenoid valve is integrated into the system to regulate the flow of
+            water precisely. This valve opens or closes based on commands from
+            the ESP32, allowing water to be supplied only to the designated
+            areas needing irrigation. The automated irrigation process minimizes
+            human intervention, reduces labor costs, and ensures consistent
+            water delivery to the crops.
+          </p>
+          <p>
+            <strong>Remote Access:</strong>
+            The AquaFlow system leverages the Blynk application, allowing
+            farmers to monitor and control the irrigation system remotely via a
+            smartphone or other internet-enabled devices. The ESP32
+            microcontroller connects to the Blynk server over Wi-Fi, enabling
+            real-time updates and control access for the user. Through the Blynk
+            app, farmers can view the current status of the sensors (e.g.,
+            temperature, humidity, and soil moisture levels) and manually
+            override the system if needed, such as starting or stopping the pump
+            directly from the app. This remote accessibility enhances
+            convenience and provides farmers with the flexibility to manage
+            irrigation schedules without needing to be on-site, ultimately
+            improving productivity and efficiency.
+          </p>
         </div>
       </section>
       <div className={styles.sectionDivider}></div>

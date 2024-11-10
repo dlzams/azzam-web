@@ -154,7 +154,7 @@
 }
 
 .problemImages div {
-  text-align: left;
+  text-align: justify;
 }
 
 .problemImages p {
@@ -316,68 +316,65 @@
   height: auto;
 }
 
+.imageRow {
+  display: flex;
+  justify-content: flex-start; /* Posisi gambar ke kiri */
+  align-items: flex-start;
+  gap: 1rem; /* Jarak antar gambar */
+  margin-bottom: 2rem;
+}
+
 .imgdesign {
-  border-radius: 20px;
-  width: 600px;
+  border-radius: 15px;
+  width: 550px;
   height: auto;
-  -webkit-border-radius: 20px;
-  -moz-border-radius: 20px;
-  -ms-border-radius: 20px;
-  -o-border-radius: 20px;
 }
 
-.system-explanation {
+.systemExplanation {
   background-color: #2c2c2c;
-  padding: 1.5rem;
+  padding: 0.5rem;
   border-radius: 8px;
-  max-width: 800px;
-  margin: 2rem auto;
+  max-width: 1000px;
+  margin: 2rem 0;
   color: #ffffff;
-  font-family: Arial, sans-serif;
+  text-align: justify;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
 }
 
-.system-explanation h3 {
-  font-size: 1.8rem;
-  color: #1e90ff;
-  text-align: center;
-  margin-bottom: 1rem;
-}
-
-.system-explanation ol {
-  counter-reset: item;
-  list-style: none;
-  padding-left: 0;
-}
-
-.system-explanation li {
-  counter-increment: item;
-  position: relative;
-  padding-left: 2.5rem;
+.systemExplanation p {
   margin-bottom: 1.5rem;
   line-height: 1.6;
 }
 
-.system-explanation li::before {
-  content: counter(item) ".";
-  position: absolute;
-  left: 0;
-  top: 0;
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: #1e90ff;
-}
-
-.system-explanation strong {
+.systemExplanation strong {
   font-size: 1.1rem;
   color: #ffa500;
-}
-
-.system-explanation p {
-  margin: 0.5rem 0 0;
+  text-align: justify;
 }
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
+  /* Pengaturan untuk kontainer utama */
+  .content {
+    padding: 1rem;
+  }
+
+  /* Title */
+  .title {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  /* Button */
+  .backButton {
+    padding: 0.6rem 1rem;
+    font-size: 0.8rem;
+  }
+
+  /* Gambar dalam kontainer yang sejajar */
   .imageContainer {
     flex-direction: column; /* Stack images vertically on smaller screens */
     align-items: center;
@@ -387,26 +384,129 @@
     width: 100%; /* Full width in mobile view */
     max-width: 100%; /* Ensure image does not exceed container width */
   }
+
   .slideImage {
     width: 100%;
     height: auto;
   }
 
+  /* Sistem penjelasan agar teks mudah dibaca */
+  .systemExplanation {
+    padding: 1rem;
+    max-width: 100%; /* Full width on smaller screens */
+    margin: 1rem 0;
+    text-align: justify;
+  }
+
+  .systemExplanation p {
+    font-size: 0.9rem;
+    line-height: 1.4;
+  }
+
+  /* Pengaturan untuk slider */
+  .slider {
+    flex-direction: column; /* Stack slider elements vertically */
+    position: relative;
+  }
+
+  /* Video grid layout diubah menjadi 1 kolom di mobile */
+  .videoContainerGrid {
+    grid-template-columns: 1fr; /* 1 column layout */
+    gap: 1rem;
+  }
+
+  /* Video styling untuk mobile */
   .video {
-    height: 150px;
+    width: 100%;
+    height: auto;
   }
 
-  .backButton {
-    padding: 0.6rem 1rem;
-    font-size: 0.8rem;
+  /* Penyesuaian untuk gambar problem identification */
+  .problemImages {
+    flex-direction: column;
+    align-items: center;
   }
 
+  .problemImages img {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  /* SDGs container styling */
+  .sdgsContainer {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  /* Interview section */
+  .interviewSection {
+    flex-direction: column;
+    padding: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .interviewImage {
+    width: 100%;
+    height: auto;
+  }
+
+  .quote {
+    padding: 1rem;
+  }
+
+  /* Dots indicator for slider */
   .dotsContainer {
     margin-top: 0.5rem;
   }
 
-  .problemImages {
+  .dot {
+    width: 8px;
+    height: 8px;
+  }
+
+  .activeDot {
+    width: 10px;
+    height: 10px;
+  }
+
+  /* Video container grid layout */
+  .videoContainerGrid {
+    grid-template-columns: 1fr; /* Display videos in a single column on mobile */
+  }
+
+  /* Image Row in How It Works Section */
+  .imageRow {
     flex-direction: column;
     align-items: center;
+    gap: 1rem;
+  }
+
+  /* Problem Identification Image Container */
+  .problemImages {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+  /* Kontainer Kutipan (Quote) */
+  .quote {
+    padding: 0.8rem 1rem; /* Mengurangi padding agar lebih ringkas */
+    font-size: 0.9rem; /* Menyesuaikan ukuran font untuk layar kecil */
+    line-height: 1.4; /* Memperbaiki jarak antar baris */
+    max-width: 100%; /* Lebar penuh pada layar kecil */
+    margin: 0 auto; /* Memastikan berada di tengah */
+  }
+
+  .quote p {
+    margin: 0;
+  }
+
+  .quote cite {
+    font-size: 0.8rem; /* Mengurangi ukuran font untuk sumber kutipan */
+    color: #1e90ff;
+    text-align: right;
+    display: block;
+    margin-top: 0.5rem; /* Mengurangi jarak vertikal di layar kecil */
   }
 }

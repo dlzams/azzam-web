@@ -1,11 +1,11 @@
 .scrollToTop {
   position: fixed;
-  bottom: 20px; /* Jarak dari bawah */
-  right: 20px; /* Jarak dari kanan */
+  bottom: 20px;
+  right: 20px;
   width: 45px;
   height: 45px;
-  background-color: #ffffff; /* Warna abu-abu gelap */
-  color: #1e1e1e; /* Dark gray untuk ikon agar kontras dengan latar belakang putih */
+  background-color: #ffffff;
+  color: #1e1e1e;
   border-radius: 50%;
   display: flex;
   justify-content: center;
@@ -13,11 +13,19 @@
   font-size: 22px;
   font-weight: bold;
   cursor: pointer;
-  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3); /* Bayangan untuk menonjolkan tombol */
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3);
   transition: transform 0.3s ease, background-color 0.3s ease;
   opacity: 0;
   visibility: hidden;
-  transform: translateY(20px); /* Slide ke bawah saat disembunyikan */
+  transform: translateY(20px);
+  -webkit-transform: translateY(20px);
+  -moz-transform: translateY(20px);
+  -ms-transform: translateY(20px);
+  -o-transform: translateY(20px);
+  -webkit-transition: transform 0.3s ease, background-color 0.3s ease;
+  -moz-transition: transform 0.3s ease, background-color 0.3s ease;
+  -ms-transition: transform 0.3s ease, background-color 0.3s ease;
+  -o-transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
 .scrollToTop.visible {
