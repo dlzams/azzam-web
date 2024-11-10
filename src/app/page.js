@@ -8,6 +8,15 @@ import Certifications from "@/components/Certifications";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 
+// Metadata untuk halaman utama
+export const metadata = {
+  title: "Azzam Web",
+  description:
+    "Explore the personal website of Muh Azzam, showcasing his skills in security analysis, machine learning, and web development. Discover projects, experiences, and certifications.",
+  keywords:
+    "Muhammad Abdullah Azzam, Telkom, Telkom University, Azzam, Informatika, Telkomsigma, Computer Science, Security Analysis, Machine Learning, Web Development, Portfolio",
+};
+
 export default function HomePage() {
   return (
     <main>
