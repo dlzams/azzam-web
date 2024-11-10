@@ -1,22 +1,50 @@
-/* src/app/aquaflow/aquaflow.module.css */
+/* Center the title and align other text to the left */
+.title {
+  text-align: center;
+  font-size: 2rem;
+  color: #ffff;
+  margin-bottom: 2rem;
+}
 
+/* Styling for Back Button */
+.backButton {
+  position: fixed; /* Fixed position so it stays at the top */
+  top: 20px;
+  left: 20px;
+  padding: 0.8rem 1.2rem;
+  font-size: 0.9rem;
+  font-weight: bold;
+  background-color: #0070f3; /* Button background color */
+  color: #fff; /* Button text color */
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  z-index: 1000; /* High z-index to ensure it's above other elements */
+  transition: background-color 0.3s ease;
+}
+
+.backButton:hover {
+  background-color: #005bb5; /* Hover effect */
+}
+
+/* Loading styles */
 .loading {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-color: #2c2c2c; /* Warna latar belakang konsisten */
-  color: #ffffff; /* Warna teks putih */
+  background-color: #2c2c2c;
+  color: #ffffff;
 }
 
 .spinner {
-  width: 50px; /* Ukuran lingkaran loading */
-  height: 50px; /* Ukuran lingkaran loading */
-  border: 5px solid #444; /* Warna lingkaran */
-  border-top: 5px solid #1e90ff; /* Warna bagian atas lingkaran */
-  border-radius: 50%; /* Membuat lingkaran */
-  animation: spin 1s linear infinite; /* Animasi berputar */
+  width: 50px;
+  height: 50px;
+  border: 5px solid #444;
+  border-top: 5px solid #1e90ff;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
 }
 
 @keyframes spin {
@@ -29,41 +57,356 @@
 }
 
 .loadingText {
-  margin-top: 1rem; /* Jarak antara spinner dan teks */
-  font-size: 1.2rem; /* Ukuran font teks loading */
-  color: #ffffff; /* Warna teks putih */
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  color: #ffffff;
   letter-spacing: 2px;
   text-transform: uppercase;
 }
 
-/* Kelas backButton */
-.backButton {
-  position: fixed;
-  top: 20px;
-  left: 20px;
-  padding: 0.8rem 1.2rem;
-  font-size: 0.9rem;
-  font-weight: bold;
-  background-color: #0070f3; /* Warna tombol */
-  color: #fff; /* Warna teks */
+/* Container and general section styling */
+.content {
+  padding: 2rem;
+  color: #ffffff;
+  background-color: #2c2c2c;
+  font-family: Arial, sans-serif;
+  min-height: 100vh;
+}
+
+.section {
+  margin-bottom: 2rem;
+}
+
+.section h2 {
+  font-size: 1.5rem;
+  color: #1e90ff;
+  margin-bottom: 1rem;
+}
+
+.sectionDivider {
+  width: 100%;
+  height: 1px;
+  background-color: #444;
+  margin: 1.5rem 0;
+}
+
+/* Slider styling */
+.slider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.slideButton {
+  background: none;
   border: none;
-  border-radius: 50px; /* Menggunakan border radius yang konsisten */
-  cursor: pointer; /* Menggunakan pointer saat hover */
-  z-index: 1000;
+  color: #fff;
+  font-size: 2rem;
+  cursor: pointer;
+  z-index: 10;
+  margin: 0 10px;
+}
+
+.slideImage {
+  border-radius: 10px;
+  width: 650px;
+  height: auto;
+}
+
+/* Dots indicator for slider */
+.dotsContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  background-color: #888;
+  border-radius: 50%;
+  margin: 0 5px;
+  cursor: pointer;
   transition: background-color 0.3s ease;
 }
 
-.backButton:hover {
-  background-color: #005bb5; /* Warna saat hover */
+.activeDot {
+  background-color: #1e90ff;
+  width: 12px;
+  height: 12px;
 }
 
-.content {
-  padding: 2rem;
-  text-align: center;
-  color: #ffffff; /* Warna teks putih */
-  background-color: #2c2c2c; /* Menggunakan warna latar belakang yang sama */
-  min-height: 100vh; /* Pastikan konten mengisi seluruh tinggi halaman */
+.divider {
+  width: 80%;
+  height: 2px;
+  background-color: #444;
+  margin: 1.5rem auto;
+  border-radius: 1px;
+}
+
+/* Problem identification image styling */
+.problemImages {
+  display: left;
+  justify-content: space-between;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+.problemImages div {
+  text-align: left;
+}
+
+.problemImages p {
+  font-size: 0.9rem;
+  color: #cccccc;
+  margin-top: 0.5rem;
+}
+
+/* SDGs container styling */
+.sdgsContainer {
   display: flex;
-  flex-direction: column;
-  justify-content: center; /* Pusatkan konten secara vertikal */
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.sdg {
+  text-align: center;
+}
+
+.sdg p {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.description {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  color: #cccccc;
+  line-height: 1.5;
+}
+
+.sdgDescription {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  color: #cccccc;
+  line-height: 1.5;
+  text-align: justify;
+}
+
+/* System components list styling */
+.componentsList {
+  list-style-type: none;
+  padding: 0;
+}
+
+.componentsList li {
+  margin-bottom: 0.5rem;
+}
+
+/* Video container for 2x2 grid layout */
+.videoContainerGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 columns layout */
+  gap: 1.5rem; /* Space between videos */
+  margin-top: 1rem;
+  justify-items: center; /* Center the items in each cell */
+}
+
+.videoContainerGrid div {
+  text-align: center;
+}
+
+.videoContainerGrid p {
+  font-size: 0.9rem;
+  color: #cccccc;
+  margin-top: 0.5rem;
+}
+
+/* Video styling with fixed width and height */
+.video {
+  width: 450px;
+  height: 250px;
+  border-radius: 10px;
+  border: none;
+}
+
+.imageContainer {
+  display: flex;
+  gap: 1rem; /* Jarak antar-gambar */
+  justify-content: flex-start; /* Agar gambar menempel di sisi kiri */
+  align-items: center; /* Menjaga gambar tetap sejajar */
+}
+
+.image {
+  border-radius: 10px;
+  width: 350px;
+  height: 200px;
+  object-fit: cover;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+/* Interview Section Styling */
+.interviewSection {
+  background-color: #2c2c2c;
+  padding: 2rem;
+  border-radius: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
+}
+
+/* Kontainer untuk Konten Wawancara */
+.interviewContent {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+}
+
+/* Styling untuk Gambar Wawancara */
+.interviewImage {
+  border-radius: 5px;
+  width: auto;
+  height: 300px;
+  object-fit: cover;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+/* Styling untuk Blok Kutipan */
+.quote {
+  background-color: rgb(
+    54,
+    53,
+    52
+  ); /* Warna hijau gelap agar terlihat berbeda */
+  padding: 1.5rem;
+  border-left: 5px solid #1e90ff; /* Garis tepi untuk menandai kutipan */
+  color: #f1f1f1; /* Warna teks putih untuk kontras */
+  font-style: italic;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.quote p {
+  margin: 0;
+}
+
+.quote cite {
+  display: block;
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  color: #1e90ff; /* Warna teks untuk penanda sumber */
+  text-align: right;
+}
+
+.imgcertf {
+  border-radius: 10px;
+  width: 500px;
+  height: auto;
+}
+
+.imgdesign {
+  border-radius: 20px;
+  width: 600px;
+  height: auto;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+
+.system-explanation {
+  background-color: #2c2c2c;
+  padding: 1.5rem;
+  border-radius: 8px;
+  max-width: 800px;
+  margin: 2rem auto;
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+}
+
+.system-explanation h3 {
+  font-size: 1.8rem;
+  color: #1e90ff;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.system-explanation ol {
+  counter-reset: item;
+  list-style: none;
+  padding-left: 0;
+}
+
+.system-explanation li {
+  counter-increment: item;
+  position: relative;
+  padding-left: 2.5rem;
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+.system-explanation li::before {
+  content: counter(item) ".";
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #1e90ff;
+}
+
+.system-explanation strong {
+  font-size: 1.1rem;
+  color: #ffa500;
+}
+
+.system-explanation p {
+  margin: 0.5rem 0 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .imageContainer {
+    flex-direction: column; /* Stack images vertically on smaller screens */
+    align-items: center;
+  }
+
+  .image {
+    width: 100%; /* Full width in mobile view */
+    max-width: 100%; /* Ensure image does not exceed container width */
+  }
+  .slideImage {
+    width: 100%;
+    height: auto;
+  }
+
+  .video {
+    height: 150px;
+  }
+
+  .backButton {
+    padding: 0.6rem 1rem;
+    font-size: 0.8rem;
+  }
+
+  .dotsContainer {
+    margin-top: 0.5rem;
+  }
+
+  .problemImages {
+    flex-direction: column;
+    align-items: center;
+  }
 }

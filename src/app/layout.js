@@ -50,7 +50,7 @@ export default function RootLayout({ children }) {
           name="keywords"
           content="Muhammad Abdullah Azzam, Telkom, Telkom University, Azzam, Informatika, Telkomsigma, Computer Science, Security Analysis, Machine Learning, Web Development, Portfolio"
         />
-        <title>Muh Azzam - Personal Website</title>
+        <title>Azzam Web</title>
 
         {/* Google Analytics Script */}
         <script
