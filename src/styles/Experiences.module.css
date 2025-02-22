@@ -133,15 +133,16 @@
 .card {
   position: relative;
   margin-left: 2rem;
-  background-color: #4a4a4a; /* Darker gray for card background */
+  background-color: #4a4a4a;
+  /*Darkergrayforcardbackground*/
   padding: 1.5rem;
-  border-radius: 20px;
+  border-radius: 35px;
   box-shadow: 0 4px 12px rgba(255, 255, 255, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  -webkit-border-radius: 20px;
-  -moz-border-radius: 20px;
-  -ms-border-radius: 20px;
-  -o-border-radius: 20px;
+  -webkit-border-radius: 35px;
+  -moz-border-radius: 35px;
+  -ms-border-radius: 35px;
+  -o-border-radius: 35px;
 }
 
 .card:hover {

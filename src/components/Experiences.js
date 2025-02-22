@@ -5,9 +5,9 @@ import styles from "../styles/Experiences.module.css";
 
 const experiences = [
   {
-    title: "Research Group",
+    title: "Head of Research Group",
     company: "Hardware and Embedded System Laboratory",
-    date: "November 2023 - Present (November 2024)",
+    date: "November 2023 - March 2025",
     description: [
       "Collaborated with a team to create an IoT-based automatic watering device, which operates based on soil and air humidity levels.",
       "Gained hands-on experience with IoT modules such as Arduino, ESP32, various sensors, and other related technologies.",
@@ -16,7 +16,7 @@ const experiences = [
     image: "/hes.jpg",
   },
   {
-    title: "Security Analyst Intern",
+    title: "Security Operation Center (SOC) Intern",
     company: "Telkomsigma by Telkom Indonesia",
     date: "June 2024 - September 2024",
     description: [

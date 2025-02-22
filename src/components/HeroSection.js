@@ -97,9 +97,10 @@ const HeroSection = () => {
             {displayText}
           </h1>
           <p>
-            YPT Telkom University Scholarship Awardee & final-year Computer
-            Science student specializing in Security Analysis, Machine Learning,
-            Deep Learning, Data Analysis, and Front-End Web Development.
+            Fresh Graduate in Computer Science & YPT Telkom University
+            Scholarship Awardee, specializing in Security Analysis, Machine
+            Learning, Deep Learning, Data Analysis, and Front-End Web
+            Development.
           </p>
         </div>
         <div className={styles.socialIcons}>

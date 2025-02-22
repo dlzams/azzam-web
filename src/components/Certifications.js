@@ -138,7 +138,7 @@ const Certifications = () => {
       <div className={styles.viewMoreContainer}>
         <Link href="/certifications" passHref legacyBehavior>
           <a className={styles.viewMoreButton} onClick={handleRipple}>
-            See All Certifications
+            Show All Certifications
           </a>
         </Link>
       </div>
