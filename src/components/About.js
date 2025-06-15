@@ -142,10 +142,8 @@ const About = () => {
               {[
                 "Security Analysis",
                 "Networking, Next-Generation Firewall",
-                "Machine Learning, Deep Learning, AI",
+                "Machine Learning, Deep Learning, AI, Tensorflow",
                 "Data Cleaning, Data Analysis, Data Visualization",
-                "TensorFlow",
-                "Front-End Web Development",
                 "Teamwork, Communication, Time Management",
                 "Football and Running :)",
               ].map((skill, index) => (
