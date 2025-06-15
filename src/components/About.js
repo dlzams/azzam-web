@@ -50,21 +50,25 @@ const About = () => {
   const shortDescription = (
     <>
       <p>
-        I&apos;m a Computer Science student at Telkom University with a strong
-        interest in research and career opportunities in data science,
-        artificial intelligence, and cybersecurity. I&apos;ve intern-ed at
-        Telkomsigma and have gained hands-on experience in the Hardware and
-        Embedded System Lab as well as the Forensic and Security Lab. My
-        projects involve analyzing data, creating visualizations, and building
-        machine learning models to solve real-world problems, such as predicting
-        weather patterns, assessing student performance, and others.
+        I&apos;m currently working as a Technical Consultant Data Security at
+        Virtus Indonesia, focusing on network security, Next-Generation
+        Firewalls (NGFW), and cybersecurity solutions for organizations and
+        multiple clients. I have a strong foundation in networking, deep
+        learning, and data analysis, supported by hands-on experience from both
+        research and applied projects. I'm passionate about solving real-world
+        problems through technology and thrive in collaborative environments.
+        I&apos;ve interned at Telkomsigma (as a SOC analyst) and contributed to
+        several technical labs during my studies. I'm a Bachelor of Informatics
+        (Computer Science) graduate from Telkom University, driven by continuous
+        learning and meaningful impact.
       </p>
       <p>
-        Recently, I completed an internship at Telkomsigma, a subsidiary of
-        Telkom Indonesia, where I was responsible for monitoring network traffic
-        and handling cybersecurity tasks for multinational clients. I used tools
-        like SIEM, Qradar, Cybereason, Stellar, and others to detect unusual
-        activity and create reports that helped clients improve their security.
+        During my time as a student in mid-2024, I completed an internship at
+        Telkomsigma, a subsidiary of Telkom Indonesia, where I was responsible
+        for monitoring network traffic and handling cybersecurity tasks for
+        multinational clients. I used tools like SIEM, QRadar, Cybereason,
+        Stellar, and others to detect unusual activity and create reports that
+        helped clients improve their security.
       </p>
     </>
   );

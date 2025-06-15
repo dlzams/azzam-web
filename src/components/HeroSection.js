@@ -97,10 +97,7 @@ const HeroSection = () => {
             {displayText}
           </h1>
           <p>
-            Fresh Graduate in Computer Science & YPT Telkom University
-            Scholarship Awardee, specializing in Security Analysis, Machine
-            Learning, Deep Learning, Data Analysis, and Front-End Web
-            Development.
+            Techincal Consultant Data Security at Virtus Indonesia (CTI Group).
           </p>
         </div>
         <div className={styles.socialIcons}>
