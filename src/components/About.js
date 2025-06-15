@@ -55,12 +55,12 @@ const About = () => {
         Firewalls (NGFW), and cybersecurity solutions for organizations and
         multiple clients. I have a strong foundation in networking, deep
         learning, and data analysis, supported by hands-on experience from both
-        research and applied projects. I'm passionate about solving real-world
-        problems through technology and thrive in collaborative environments.
-        I&apos;ve interned at Telkomsigma (as a SOC analyst) and contributed to
-        several technical labs during my studies. I'm a Bachelor of Informatics
-        (Computer Science) graduate from Telkom University, driven by continuous
-        learning and meaningful impact.
+        research and applied projects. I&apos;m passionate about solving
+        real-world problems through technology and thrive in collaborative
+        environments. I&apos;ve interned at Telkomsigma (as a SOC analyst) and
+        contributed to several technical labs during my studies. I&apos;m a
+        Bachelor of Informatics (Computer Science) graduate from Telkom
+        University, driven by continuous learning and meaningful impact.
       </p>
       <p>
         During my time as a student in mid-2024, I completed an internship at
