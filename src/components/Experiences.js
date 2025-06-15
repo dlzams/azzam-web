@@ -8,8 +8,7 @@ const experiences = [
     title: "Technical Consultant",
     company: "PT Virtus Technology Indonesia (CTI Group)",
     date: "June 2025 - Now",
-    description: ["hhh... it's a secret (for now). Stay tuned"],
-    image: "/virtus.png",
+    description: ["hhh... it's a secret (for now). Stay tuned!"],
     image: "/virtus.png",
   },
   {

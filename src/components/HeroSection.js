@@ -97,7 +97,7 @@ const HeroSection = () => {
             {displayText}
           </h1>
           <p>
-            Techincal Consultant Data Security at Virtus Indonesia (CTI Group).
+            Technical Consultant Data Security at Virtus Indonesia (CTI Group).
           </p>
         </div>
         <div className={styles.socialIcons}>

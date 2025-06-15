@@ -141,11 +141,11 @@ const About = () => {
             <ul className={styles["skills-list"]}>
               {[
                 "Security Analysis",
+                "Networking, Next-Generation Firewall",
                 "Machine Learning, Deep Learning, AI",
                 "Data Cleaning, Data Analysis, Data Visualization",
                 "TensorFlow",
                 "Front-End Web Development",
-                "Python, C++, Golang, JavaScript",
                 "Teamwork, Communication, Time Management",
                 "Football and Running :)",
               ].map((skill, index) => (
