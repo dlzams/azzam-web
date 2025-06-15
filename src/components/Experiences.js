@@ -5,10 +5,11 @@ import styles from "../styles/Experiences.module.css";
 
 const experiences = [
   {
-    title: "Techincal Consultant",
+    title: "Technical Consultant",
     company: "PT Virtus Technology Indonesia (CTI Group)",
     date: "June 2025 - Now",
-    description: [],
+    description: ["hhh... it's a secret (for now). Stay tuned"],
+    image: "/virtus.png",
     image: "/virtus.png",
   },
   {
