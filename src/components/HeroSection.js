@@ -97,7 +97,8 @@ const HeroSection = () => {
             {displayText}
           </h1>
           <p>
-            Technical Consultant Data Security at Virtus Indonesia (CTI Group).
+            Fresh Graduate in Informatics Tel-U, Ex-Security Operations Center
+            (SOC) Intern at Telkomsigma, & YPT Telkom Scholarship Awardee.
           </p>
         </div>
         <div className={styles.socialIcons}>

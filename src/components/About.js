@@ -50,17 +50,13 @@ const About = () => {
   const shortDescription = (
     <>
       <p>
-        I&apos;m currently working as a Technical Consultant Data Security at
-        Virtus Indonesia, focusing on network security, Next-Generation
-        Firewalls (NGFW), and cybersecurity solutions for organizations and
-        multiple clients. I have a strong foundation in networking, deep
-        learning, and data analysis, supported by hands-on experience from both
-        research and applied projects. I&apos;m passionate about solving
-        real-world problems through technology and thrive in collaborative
-        environments. I&apos;ve interned at Telkomsigma (as a SOC analyst) and
-        contributed to several technical labs during my studies. I&apos;m a
-        Bachelor of Informatics (Computer Science) graduate from Telkom
-        University, driven by continuous learning and meaningful impact.
+        I am a fresh graduate in Informatics from Telkom University with a
+        strong interest in cybersecurity, networking, and machine learning. My
+        academic and hands-on experiences have built a solid foundation in these
+        areas, especially through my internship as a SOC analyst and involvement
+        in various research and applied projects. I am currently seeking
+        opportunities to grow my career or contribute to research in
+        cybersecurity, machine learning, and related fields.
       </p>
       <p>
         During my time as a student in mid-2024, I completed an internship at
@@ -140,8 +136,8 @@ const About = () => {
             <h3 className={styles["skills-title"]}>Skills</h3>
             <ul className={styles["skills-list"]}>
               {[
-                "Security Analysis",
-                "Networking, Next-Generation Firewall",
+                "Incident Response Handling (Security Analysis)",
+                "Network, Routing Switching, XDR, EDR",
                 "Machine Learning, Deep Learning, AI, Tensorflow",
                 "Data Cleaning, Data Analysis, Data Visualization",
                 "Teamwork, Communication, Time Management",
