@@ -5,6 +5,24 @@ import styles from "../styles/Experiences.module.css";
 
 const experiences = [
   {
+    title: "Junior CTS Engineer",
+    company: "Integra (Lintas Teknologi Group)",
+    date: "September 2025 - Present",
+    description: [
+      "still figuring out where the coffee machine is ☕.",
+      "already best friends with the office AC ❄️.",
+      "still leveling up — stay tuned 🚀.",
+    ],
+    image: "/integra.png",
+  },
+  {
+    title: "Techincal Engineer",
+    company: "Virtus Technology Indonesia",
+    date: "June 2025 - August 2025",
+    description: ["Pre-sales Palo Alto Networks.", "etc."],
+    image: "/virtus.png",
+  },
+  {
     title: "Head of Research Group",
     company: "Hardware and Embedded System Laboratory",
     date: "November 2023 - March 2025",
