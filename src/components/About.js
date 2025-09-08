@@ -99,6 +99,10 @@ const About = () => {
         Linux, network security, and web hacking through practical challenges
         like Capture the Flag (CTF) exercises.
       </p>
+      <p>
+        Thanks for scrolling all the way down here — you&apos;re officially
+        awesome 🙌.
+      </p>
     </>
   );
 

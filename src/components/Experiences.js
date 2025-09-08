@@ -16,7 +16,7 @@ const experiences = [
     image: "/integra.png",
   },
   {
-    title: "Technical Engineer",
+    title: "Technical Consultant",
     company: "Virtus Technology Indonesia",
     date: "June 2025 - August 2025",
     description: ["Pre-sales Palo Alto Networks.", "etc."],
