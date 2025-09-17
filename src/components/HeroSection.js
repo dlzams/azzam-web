@@ -97,7 +97,7 @@ const HeroSection = () => {
             {displayText}
           </h1>
           <p>
-            Junior Endpoint Security Engineer at Integra (Lintas Teknologi
+            Junior Endpoint Security Engineer at Integra (Lintas
             Group)
           </p>
         </div>

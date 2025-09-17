@@ -6,18 +6,18 @@ import styles from "../styles/Experiences.module.css";
 const experiences = [
   {
     title: "Junior CTS Engineer",
-    company: "Integra (Lintas Teknologi Group)",
+    company: "PT. Logistik Teknologi Indonesia (Integra) by Lintas Group",
     date: "September 2025 - Present",
     description: [
-      "still figuring out where the coffee machine is ☕.",
+      "Manage Services for PT Bank Negara Indonesia (Persero), Tbk.",
       "already best friends with the office AC ❄️.",
       "still leveling up — stay tuned 🚀.",
     ],
-    image: "/integra.png",
+    image: "/mix.png",
   },
   {
     title: "Technical Consultant",
-    company: "Virtus Technology Indonesia",
+    company: "PT. Virtus Technology Indonesia by CTI Group",
     date: "June 2025 - August 2025",
     description: ["Pre-sales Palo Alto Networks.", "etc."],
     image: "/virtus.png",
@@ -34,8 +34,8 @@ const experiences = [
     image: "/hes.jpg",
   },
   {
-    title: "Security Operation Center (SOC) Intern",
-    company: "Telkomsigma by Telkom Indonesia",
+    title: "Security Operation Center Intern",
+    company: "PT. Sigma Cipta Caraka (Telkomsigma) by Telkom Indonesia",
     date: "June 2024 - September 2024",
     description: [
       "Monitored network traffic for multiple multinational companies, managing cybersecurity for over 6 companies to spot unusual activity or threats.",

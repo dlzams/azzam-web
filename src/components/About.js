@@ -47,64 +47,78 @@ const About = () => {
     };
   }, []);
 
-  const shortDescription = (
-    <>
-      <p>
-        I am a fresh graduate in Informatics from Telkom University with a
-        strong interest in cybersecurity, networking, and machine learning. My
-        academic and hands-on experiences have built a solid foundation in these
-        areas, especially through my internship as a SOC analyst and involvement
-        in various research and applied projects. I am currently seeking
-        opportunities to grow my career or contribute to research in
-        cybersecurity, machine learning, and related fields.
-      </p>
-      <p>
-        During my time as a student in mid-2024, I completed an internship at
-        Telkomsigma, a subsidiary of Telkom Indonesia, where I was responsible
-        for monitoring network traffic and handling cybersecurity tasks for
-        multinational clients. I used tools like SIEM, QRadar, Cybereason,
-        Stellar, and others to detect unusual activity and create reports that
-        helped clients improve their security.
-      </p>
-    </>
-  );
+const shortDescription = (
+  <>
+    <p>
+      Junior Endpoint Security Engineer — currently onsite at BNI Pejompongan,
+      Jakarta Pusat. I am a fresh graduate in Informatics from Telkom University
+      (May 2025) with a strong focus on cybersecurity, networking, and modern
+      security operations & solutions.
+    </p>
+    <p>
+      Previously at <strong>Virtus Technology Indonesia</strong>, I gained
+      technical and presales exposure with leading solutions such as Palo Alto
+      Networks, and developed familiarity with security platforms including
+      CrowdStrike and Sophos — allowing me to understand their unique strengths,
+      use cases, and differences in enterprise security environments.
+    </p>
+    <p>
+      I also completed an internship at <strong>Telkomsigma</strong> (Telkom
+      Indonesia Group) as a Security Analyst in their SOC, where I worked
+      hands-on with SIEM, IBM QRadar, Cybereason, Stellar, and other
+      platforms for real-time monitoring, threat detection, and reporting for
+      multinational clients.
+    </p>
+    <p>
+      My expertise spans <strong>endpoint security (EDR/XDR)</strong>,{" "}
+      <strong>network architecture</strong>, and{" "}
+      <strong>security solutions</strong>. I have a strong understanding of routers,
+      switches, network devices, OSI 7 Layers, NAT, LAN/WAN, VPN, SD-WAN,
+      storage solutions (NAS, DAS), and various network topologies — ensuring a
+      comprehensive understanding from design to defense.
+    </p>
+  </>
+);
 
-  const fullDescription = (
-    <>
-      {shortDescription}
-      <p>
-        In late 2023, I had the honor of securing project funding of 13 million
-        Rupiah (about $850) for an Internet of Things (IoT) project, ranking in
-        the top 163 nationally in the Innovillage Competition. This project
-        involved designing an automated irrigation system that utilized time,
-        humidity, and temperature data to optimize water usage. Beyond IoT, I
-        have significant experience in machine learning, deep learning, and
-        artificial intelligence, with a strong foundation in data analysis, NLP,
-        and computer vision.
-      </p>
-      <p>
-        I also recently completed the Bangkit Academy program, led by Google,
-        Tokopedia, Gojek, and Traveloka. This immersive experience introduced me
-        to advanced machine learning topics and practical model deployment. I
-        led the development of an AI model for &apos;Sereluna&apos;, a mental
-        health mobile app, using natural language processing to analyze user
-        diary entries for mental health insights.
-      </p>
-      <p>
-        Alongside my studies, I have actively contributed to Telkom
-        University&apos;s Informatics Laboratory as an assistant, teaching data
-        structures and supporting practicum sessions for nearly 90 students.
-        Additionally, my involvement in the Forensic and Security Laboratory has
-        strengthened my knowledge in cybersecurity, where I honed my skills in
-        Linux, network security, and web hacking through practical challenges
-        like Capture the Flag (CTF) exercises.
-      </p>
-      <p>
-        Thanks for scrolling all the way down here — you&apos;re officially
-        awesome 🙌.
-      </p>
-    </>
-  );
+const fullDescription = (
+  <>
+    {shortDescription}
+    <p>
+      In late 2023, I secured national project funding of 13 million Rupiah
+      (≈$850) in the Innovillage Competition, ranking in the top 163. My project
+      developed an IoT-based smart irrigation system integrating time, humidity,
+      and temperature data to optimize water usage — an experience that honed my
+      skills in IoT, automation, and system integration.
+    </p>
+    <p>
+      In 2024, I was selected for the <strong>Bangkit Academy</strong> by Google,
+      Tokopedia, Gojek, and Traveloka, specializing in Machine Learning. I led
+      the AI model development for <em>Sereluna</em>, a mobile app for mental
+      health support, applying NLP to analyze user diaries and deliver
+      data-driven insights.
+    </p>
+    <p>
+      Throughout university, I actively contributed to Telkom University&apos;s{" "}
+      <strong>Informatics Laboratory</strong> as a practicum assistant,
+      delivering sessions in Data Structures for 90+ students. I was also a
+      member of the <strong>Forensic & Security Laboratory</strong>, where I
+      sharpened my skills in Linux, ethical hacking, and penetration testing
+      through Capture The Flag (CTF) exercises and real-world simulations.
+    </p>
+    <p>
+      These diverse experiences — from SOC operations and enterprise security
+      solutions, to AI-driven applications and academic leadership — have
+      equipped me with both the <strong>technical depth</strong> and the{" "}
+      <strong>problem-solving mindset</strong> needed to grow in cybersecurity,
+      networking, and advanced IT solutions.
+    </p>
+    <p>
+      Thanks for scrolling this far — I look forward to new opportunities to
+      contribute, learn, and secure the enterprise infrastructure 🙌.
+    </p>
+  </>
+);
+
 
   return (
     <section className={styles["about-section"]}>
@@ -140,12 +154,12 @@ const About = () => {
             <h3 className={styles["skills-title"]}>Skills</h3>
             <ul className={styles["skills-list"]}>
               {[
-                "Incident Response Handling (Security Analysis)",
-                "Network, Routing Switching, XDR, EDR",
-                "Machine Learning, Deep Learning, AI, Tensorflow",
-                "Data Cleaning, Data Analysis, Data Visualization",
-                "Teamwork, Communication, Time Management",
-                "Football and Running :)",
+              "Threat Detection & Incident Response (SIEM, SOC Operations)",
+              "EDR, XDR, NGFW, DLP, NAT, LAN, WAN",
+              "Routing, Switching, OSI 7 Layers, Network Topologies & Devices",
+              "Machine Learning, Deep Learning, Data Analysis & Visualization",
+              "Teamwork, Communication, Time Management",
+              "Football ⚽ & Running 🏃",
               ].map((skill, index) => (
                 <li
                   key={index}

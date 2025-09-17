@@ -187,8 +187,8 @@
 }
 
 .image {
-  max-width: 140px; /* Batas maksimum lebar gambar */
-  max-height: 70px; /* Batas maksimum tinggi gambar */
+  max-width: 190px; /* Batas maksimum lebar gambar */
+  max-height: 85px; /* Batas maksimum tinggi gambar */
   object-fit: contain; /* Pertahankan aspek rasio asli */
   margin-left: auto; /* Agar gambar tetap rapi di sisi kanan */
   display: block;

@@ -67,6 +67,14 @@
   transform: translateY(20px);
 }
 
+.about-description p {
+  margin-bottom: 1rem; /* kasih jarak antar paragraf */
+}
+
+.about-description p:last-child {
+  margin-bottom: 0; /* hapus margin di paragraf terakhir biar rapih */
+}
+
 /* Skills Section */
 .about-skills {
   margin-top: 2rem;
@@ -146,6 +154,10 @@
     font-size: 0.95rem; /* Kurangi ukuran font deskripsi */
     line-height: 1.5;
     padding: 0.5rem;
+  }
+
+    .about-description p {
+    margin-bottom: 0.8rem;
   }
 
   .skills-title {
