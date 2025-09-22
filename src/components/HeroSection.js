@@ -97,8 +97,7 @@ const HeroSection = () => {
             {displayText}
           </h1>
           <p>
-            Junior Endpoint Security Engineer at Integra (Lintas
-            Group)
+            Junior Endpoint Security Engineer at PT Bank Negara Indonesia (Persero), Tbk.
           </p>
         </div>
         <div className={styles.socialIcons}>
