@@ -51,7 +51,7 @@ const shortDescription = (
   <>
     <p>
       Junior Endpoint Security Engineer — currently onsite at BNI Pejompongan,
-      Jakarta Pusat. I am a fresh graduate in Informatics from Telkom University
+      Central Jakarta. I am a fresh graduate in Informatics from Telkom University
       (May 2025) with a strong focus on cybersecurity, networking, and modern
       security operations & solutions.
     </p>

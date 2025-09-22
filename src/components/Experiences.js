@@ -5,7 +5,7 @@ import styles from "../styles/Experiences.module.css";
 
 const experiences = [
   {
-    title: "Junior CTS Engineer",
+    title: "Junior Endpoint Security Engineer",
     company: "PT. Logistik Teknologi Indonesia (Integra) by Lintas Group",
     date: "September 2025 - Present",
     description: [
