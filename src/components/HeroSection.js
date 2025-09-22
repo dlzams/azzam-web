@@ -99,6 +99,9 @@ const HeroSection = () => {
           <p>
             Junior Endpoint Security Engineer at PT Bank Negara Indonesia (Persero), Tbk.
           </p>
+          <p style={{ fontSize: "15px", color: "#4f555fff" }}>
+            Bachelor of Computer Science, Telkom University (Graduated May 2025)
+          </p>
         </div>
         <div className={styles.socialIcons}>
           <a

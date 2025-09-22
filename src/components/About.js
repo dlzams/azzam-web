@@ -133,6 +133,7 @@ const fullDescription = (
             className={styles["about-image"]}
           />
         </div>
+        
 
         {/* Right Side: Content */}
         <div className={styles["about-content"]}>
@@ -154,8 +155,8 @@ const fullDescription = (
             <h3 className={styles["skills-title"]}>Skills</h3>
             <ul className={styles["skills-list"]}>
               {[
-              "Threat Detection & Incident Response (SIEM, SOC Operations)",
-              "EDR, XDR, NGFW, DLP, NAT, LAN, WAN",
+              "Threat Detection & Incident Response (SIEM Qradar, SOC Operations)",
+              "EDR/XDR (Cortex XDR, CrowdStrike, Cybereason), DLP (Forcepoint), NAC Aruba",
               "Routing, Switching, OSI 7 Layers, Network Topologies & Devices",
               "Machine Learning, Deep Learning, Data Analysis & Visualization",
               "Teamwork, Communication, Time Management",
