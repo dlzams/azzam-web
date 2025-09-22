@@ -10,8 +10,10 @@ const experiences = [
     date: "September 2025 - Present",
     description: [
       "Manage Services for PT Bank Negara Indonesia (Persero), Tbk.",
-      "already best friends with the office AC ❄️.",
-      "still leveling up — stay tuned 🚀.",
+      "Implemented and maintained endpoint security solutions (EDR, DLP, NAC such as Aruba ClearPass) across diverse platforms including Windows, macOS, and Linux servers to ensure compliance and protection.",
+      "Performed endpoint and server hardening, applying security policies and best practices to strengthen system defenses against threats.",
+      "Supported secure connectivity for employees and branch offices by managing network access control and site binding, ensuring endpoints comply with internal banking security standards.",
+      "Conducted on-site troubleshooting and remediation for endpoint security issues, coordinating with business units to restore secure access and minimize downtime.",
     ],
     image: "/mix.png",
   },
