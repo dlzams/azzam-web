@@ -133,6 +133,18 @@
   color: #ff6666;
 }
 
+.slaNote {
+  margin-top: 0.8rem;
+  font-size: 0.9rem;
+  color: #9aa0a6;
+  text-align: center;
+  line-height: 1.4;
+}
+
+.slaNote {
+  opacity: 0.9;
+}
+
 @media (max-width: 768px) {
   .contactContainer {
     flex-direction: column;

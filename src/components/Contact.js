@@ -141,6 +141,7 @@ const Contact = () => {
               required
             ></textarea>
           </div>
+          
           <button
             type="submit"
             className={styles.submitButton}
@@ -148,6 +149,9 @@ const Contact = () => {
           >
             {isSubmitting ? "Submitting..." : "Submit"}
           </button>
+          <p className={styles.slaNote}>
+            All messages are reviewed personally. You can expect a response within 24 hours.
+            </p>
         </form>
       </div>
     </section>
