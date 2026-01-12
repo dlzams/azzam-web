@@ -1,4 +1,79 @@
 const certificationsData = [
+    {
+    imageUrl: "/certifications/certfsec-1.jpg",
+    title: "Endpoint Security",
+    description: [
+      "Explain how types of data can present unique challenges, with examples.",
+      "Document and recommend threat mitigation measures for common and emerging network threats that are relevant to a given organization.",
+      "Configure a simulated network according to organizational requirements.",
+      "Analyze malware files that have been extracted from packet captures.",
+      "Evaluate endpoint security.",
+    ],
+    credentialUrl:
+      "https://www.credly.com/badges/c1215052-d53b-4682-93ab-4f3d14a42dfe/public_url",
+    issuer: "CISCO",
+  },
+      {
+    imageUrl: "/certifications/certfsec-2.jpg",
+    title: "Ethical Hacker",
+    description: [
+      "Explain the importance of methodological ethical hacking and penetration testing.",
+      "Create penetration testing preliminary documents.",
+      "Perform information gathering and vulnerability scanning activities.",
+      "Explain how social engineering attacks succeed.",
+      "Explain how to exploit wired and wireless network vulnerabilities.",
+      "Explain how to exploit application-based vulnerabilities.",
+      "Explain how to exploit cloud, mobile, and lot security vulnerabilities.",
+      "Explain how to perform post-exploitation activities.",
+      "Create a penetration testing report.",
+      "Classify pentesting tools by use case.",
+    ],
+    credentialUrl:
+      "https://www.credly.com/badges/1a1ab7c7-d8b4-458d-8449-e7d120167bfc/public_url",
+    issuer: "CISCO",
+  },
+      {
+    imageUrl: "/certifications/certfsec-3.jpg",
+    title: "Cyber Threat Management",
+    description: [
+      "Explain why organizations must conform with specific compliance frameworks according to institutional context.",
+      "Evaluate network and systems vulnerability.",
+      "Given an organizational context, create a vulnerability assessment plan by identifying and describing relevant threats.",
+      "Explain how IT systems vulnerability is assessed.",
+      "Select security controls based on organizational relevance and create a risk management plan.",
+      "Explain how organizations recover from cybersecurity exploits.",
+      "Given organizational contexts, recommend disaster recovery and incident response activities.",
+      "Explain how forensic investigations of internal and external security incidents are performed.",
+    ],
+    credentialUrl:
+      "https://www.credly.com/badges/194315f2-8cfc-4484-9bb7-6845b9e06af3/public_url",
+    issuer: "CISCO",
+  },    {
+    imageUrl: "/certifications/certfsec-4.jpg",
+    title: "Network Support and Security",
+    description: [
+      "Demonstrate effective troubleshooting methodologies and help desk best practices.",
+      "Explain common threats, vulnerabilities, and attacks on end points.",
+      "Configure secure user access on a network.",
+    ],
+    credentialUrl:
+      "https://www.credly.com/badges/a009e9ce-6eba-4698-9042-593559fd6952/public_url",
+    issuer: "CISCO",
+  },
+      {
+    imageUrl: "/certifications/certfsec-5.jpg",
+    title: "Introduction to Cybersecurity",
+    description: [
+      "Explain the basics of being safe online, including what cybersecurity is and its potential impact.",
+      "Explain the most common cyber threats, attacks, and vulnerabilities.",
+      "Explain how to protect oneself while online.",
+      "Explain how organizations can protect their operations against these attacks.",
+      "Access a variety of information and resources to explore the different career options in cybersecurity.",
+    ],
+    credentialUrl:
+      "https://www.credly.com/badges/d62f0681-7f34-4882-b8cd-61216ff53d1e/public_url",
+    issuer: "CISCO",
+  },
   {
     imageUrl: "/certifications/certf-1.jpg",
     title: "Using Python to Interact with the Operating System",

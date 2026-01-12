@@ -123,7 +123,7 @@ const Certifications = () => {
                 rel="noopener noreferrer"
                 className={styles.certificateLink}
               >
-                🔗 Credential
+                🔗 View Certificate
               </a>
             </div>
           </div>

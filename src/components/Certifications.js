@@ -7,55 +7,62 @@ import Link from "next/link";
 
 const certificationsData = [
   {
-    imageUrl: "/certifications/certf-34.jpg",
-    title: "Advanced Computer Vision with TensorFlow",
+    imageUrl: "/certifications/certfsec-1.jpg",
+    title: "Endpoint Security",
     description: [
-      "Image Segmentation",
-      "TensorFlow Object Detection API",
-      "Class Activation Maps",
-      "Model Interpretability",
+      "Explain how types of data can present unique challenges, with examples.",
+      "Document and recommend threat mitigation measures for common and emerging network threats that are relevant to a given organization.",
+      "Configure a simulated network according to organizational requirements.",
+      "Analyze malware files that have been extracted from packet captures.",
+      "Evaluate endpoint security.",
     ],
     credentialUrl:
-      "https://www.coursera.org/account/accomplishments/verify/QEK5C8FK6HCK",
+      "https://www.credly.com/badges/c1215052-d53b-4682-93ab-4f3d14a42dfe/public_url",
   },
   {
-    imageUrl: "/certifications/certf-28.jpg",
-    title: "DeepLearning.AI TensorFlow Developer",
+    imageUrl: "/certifications/certfsec-2.jpg",
+    title: "Ethical Hacker",
     description: [
-      "Build natural language processing systems using TensorFlow.",
-      "Handle real-world image data and explore strategies to prevent overfitting, including augmentation and dropout.",
-      "Apply RNNs, GRUs, and LSTMs as train them using text repositories.",
-      "Convolutional Neural Network",
-      "Time Series, TensorFlow",
-      "Transfer Learning, NLP, Tokenization, Computer Vision, etc",
+      "Explain the importance of methodological ethical hacking and penetration testing.",
+      "Create penetration testing preliminary documents.",
+      "Perform information gathering and vulnerability scanning activities.",
+      "Explain how social engineering attacks succeed.",
+      "Explain how to exploit wired and wireless network vulnerabilities.",
+      "Explain how to exploit application-based vulnerabilities.",
+      "Explain how to exploit cloud, mobile, and lot security vulnerabilities.",
+      "Explain how to perform post-exploitation activities.",
+      "Create a penetration testing report.",
+      "Classify pentesting tools by use case.",
     ],
     credentialUrl:
-      "https://www.coursera.org/account/accomplishments/specialization/GXAKEPSRSRNP",
+      "https://www.credly.com/badges/1a1ab7c7-d8b4-458d-8449-e7d120167bfc/public_url",
   },
   {
-    imageUrl: "/certifications/certf-6.jpg",
-    title: "Learn Data Analysis with Python (ID-EN)",
+    imageUrl: "/certifications/certfsec-3.jpg",
+    title: "Cyber Threat Management",
     description: [
-      "Understand basic data analysis concepts and the steps involved.",
-      "Learn the basics of descriptive statistics and how to use them in data analysis.",
-      "Use various data wrangling techniques to prepare clean, ready-to-analyze data.",
-      "Apply exploratory data analysis (EDA) techniques to get insights from the data.",
-      "Use effective data visualization methods to make it easier to share analysis results.",
-      "Create interactive dashboards with Streamlit to present data analysis results in an engaging way.",
-    ],
-    credentialUrl: "https://www.dicoding.com/certificates/2VX3O9ORNZYQ",
-  },
-  {
-    imageUrl: "/certifications/certf-24.jpg",
-    title: "Natural Language Processing in TensorFlow",
-    description: [
-      "Build natural language processing systems using TensorFlow",
-      "Apply RNNs, GRUs, and LSTMs in TensorFlow",
-      "Process text, including tokenization and representing sentences as vectors",
-      "Train LSTMs on existing text to create original poetry and more",
+      "Explain why organizations must conform with specific compliance frameworks according to institutional context.",
+      "Evaluate network and systems vulnerability.",
+      "Given an organizational context, create a vulnerability assessment plan by identifying and describing relevant threats.",
+      "Explain how IT systems vulnerability is assessed.",
+      "Select security controls based on organizational relevance and create a risk management plan.",
+      "Explain how organizations recover from cybersecurity exploits.",
+      "Given organizational contexts, recommend disaster recovery and incident response activities.",
+      "Explain how forensic investigations of internal and external security incidents are performed.",
     ],
     credentialUrl:
-      "https://www.coursera.org/account/accomplishments/verify/XE5AN5P5YMY7",
+    "https://www.credly.com/badges/194315f2-8cfc-4484-9bb7-6845b9e06af3/public_url",
+  },
+  {
+    imageUrl: "/certifications/certfsec-4.jpg",
+    title: "Network Support and Security",
+    description: [
+      "Demonstrate effective troubleshooting methodologies and help desk best practices.",
+      "Explain common threats, vulnerabilities, and attacks on end points.",
+      "Configure secure user access on a network.",
+    ],
+    credentialUrl:
+      "https://www.credly.com/badges/a009e9ce-6eba-4698-9042-593559fd6952/public_url",
   },
 ];
 
@@ -130,7 +137,7 @@ const Certifications = () => {
               rel="noopener noreferrer"
               className={styles.certificateLink}
             >
-              🔗 Credential
+              🔗 View Certificate
             </a>
           </div>
         ))}
