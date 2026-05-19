@@ -97,7 +97,7 @@ const HeroSection = () => {
             {displayText}
           </h1>
           <p>
-            Junior Endpoint Security Engineer at PT Bank Negara Indonesia (Persero), Tbk.
+            Endpoint Security Engineer at PT Bank Negara Indonesia (Persero), Tbk.
           </p>
           <p style={{ fontSize: "15px", color: "#4f555fff" }}>
             Bachelor of Computer Science, Telkom University (Graduated May 2025)
