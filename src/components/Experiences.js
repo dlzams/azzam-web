@@ -9,7 +9,7 @@ const experiences = [
     company: "PT. Logistik Teknologi Indonesia (Integra) by Lintas Group",
     date: "September 2025 - Present",
     description: [
-      "Manage Services for PT Bank Negara Indonesia (Persero), Tbk.",
+      "Managed Services for PT Bank Negara Indonesia (Persero), Tbk.",
       "Implemented and maintained endpoint security solutions (EDR, DLP, NAC such as Aruba ClearPass) across diverse platforms including Windows, macOS, and Linux servers to ensure compliance and protection.",
       "Performed endpoint and server hardening, applying security policies and best practices to strengthen system defenses against threats.",
       "Supported secure connectivity for employees and branch offices by managing network access control and site binding, ensuring endpoints comply with internal banking security standards.",
