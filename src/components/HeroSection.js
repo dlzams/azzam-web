@@ -97,7 +97,7 @@ const HeroSection = () => {
             {displayText}
           </h1>
           <p>
-            Endpoint Security Engineer at PT Bank Negara Indonesia (Persero), Tbk.
+            Cyber Security Analyst at Temika Cyber (PT Teknologi Integrasi Informatika)
           </p>
           <p style={{ fontSize: "15px", color: "#4f555fff" }}>
             Bachelor of Computer Science, Telkom University (Graduated May 2025)
