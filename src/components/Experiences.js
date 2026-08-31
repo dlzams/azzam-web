@@ -4,10 +4,23 @@ import React, { useEffect, useRef } from "react";
 import styles from "../styles/Experiences.module.css";
 
 const experiences = [
+    {
+    title: "Security Operation Center Analyst",
+    company: "PT Teknologi Integrasi Informatika (Temika Cyber)",
+    date: "August 2026 - Present",
+    description: [
+      "Monitor and analyze security events and alerts within SOC operations using platforms including CrowdStrike Falcon Next-Gen SIEM and Wazuh.",
+      "Analyze and correlate security telemetry from multiple sources, including firewalls, EDR/XDR platforms, and other security sensors, to identify potential threats and suspicious activities.",
+      "Perform initial alert triage and investigation, including validating alerts, identifying false positives, and assessing the severity and potential impact of security events.",
+      "Investigate security incidents and suspicious activities by analyzing event context, timelines, indicators, and related telemetry to support incident response and escalation.",
+      "Document and manage security incidents through DFIR-IRIS, maintaining investigation context and relevant findings for further analysis and response.",
+    ],
+    image: "/temika.png",
+  },
   {
     title: "Endpoint Security Engineer",
     company: "PT. Logistik Teknologi Indonesia (Integra) by Lintas Group",
-    date: "September 2025 - Present",
+    date: "September 2025 - August 2026",
     description: [
       "Managed Services for PT Bank Negara Indonesia (Persero), Tbk.",
       "Implemented and maintained endpoint security solutions (EDR, DLP, NAC such as Aruba ClearPass) across diverse platforms including Windows, macOS, and Linux servers to ensure compliance and protection.",
@@ -24,7 +37,7 @@ const experiences = [
     description: ["Pre-sales Palo Alto Networks.", "etc."],
     image: "/virtus.png",
   },
-  {
+  /*{
     title: "Head of Research Group",
     company: "Hardware and Embedded System Laboratory",
     date: "November 2023 - March 2025",
@@ -34,13 +47,13 @@ const experiences = [
       "Served as a 'mentor' for junior students, offering guidance and insights for innovation competitions and projects in hardware and embedded systems.",
     ],
     image: "/hes.jpg",
-  },
+  },*/
   {
     title: "Security Operation Center Intern",
     company: "PT. Sigma Cipta Caraka (Telkomsigma) by Telkom Indonesia",
     date: "June 2024 - September 2024",
     description: [
-      "Monitored network traffic for multiple multinational companies, managing cybersecurity for over 6 companies to spot unusual activity or threats.",
+      "Monitored network traffic for multiple multinational companies, managing cybersecurity to spot unusual activity or threats.",
       "Detected network anomalies and potential attacks, creating clear incident reports and sharing them with clients to keep them informed.",
       "Utilized cybersecurity tools such as SIEM, Cybereason, Group-IB Threat Hunting Framework (THF), Qradar, and Stellar to enhance monitoring, threat detection, and incident response processes.",
       "Built attack flow diagrams to show where attacks started, how they moved, and what they targeted, giving clients a better understanding of security risks.",
@@ -49,7 +62,7 @@ const experiences = [
     image: "/telkomsigma.jpg",
   },
   {
-    title: "Machine Learning Cohort",
+    title: "Machine Learning Cohort (Bootcamp)",
     company: "Bangkit Academy led by Google, Tokopedia, Gojek, & Traveloka",
     date: "February 2024 - June 2024",
     description: [
@@ -59,7 +72,7 @@ const experiences = [
       "Developed and led AI model development for Sereluna, a mobile application designed for mental health detection. Utilizing natural language processing (NLP), the model analyzes user diary entries and generates output labels to identify potential mental health conditions, overseeing model design and integration to ensure optimal performance in the app.",
     ],
     image: "/bangkit.jpg",
-  },
+  },/*
   {
     title: "Practicum Assistant of Data Structure",
     company: "Informatics Laboratory Telkom University",
@@ -70,7 +83,7 @@ const experiences = [
       "Assisted in managing a practicum course for 80-90 students, ensuring effective communication and support for each student's learning experience.",
     ],
     image: "/iflab.jpg",
-  },
+  },*//*
   {
     title: "Study Group",
     company: "Forensic And Security Laboratory",
@@ -81,18 +94,7 @@ const experiences = [
       "Actively participated in Capture the Flag (CTF) challenges, enhancing problem-solving skills and applying knowledge in practical cybersecurity scenarios.",
     ],
     image: "/forestylab.jpg",
-  },
-  {
-    title: "Student Internship",
-    company: "Advanced Software Engineering Laboratory",
-    date: "June 2023 - July 2023",
-    description: [
-      "Analyzed and documented business processes to support software development planning.",
-      "Identified suitable software development models aligned with user requirements.",
-      "Authored comprehensive documentation detailing business processes from initial stages through to software development initiation.",
-    ],
-    image: "/aselab.jpg",
-  },
+  },*/
 ];
 
 const Experiences = () => {
@@ -126,7 +128,7 @@ const Experiences = () => {
       <div className={styles.bubble4}></div>
       <div className={styles.bubble5}></div>
 
-      <h2 className={styles.title}>Experiences</h2>
+      <h2 className={styles.title}>Professional Experiences</h2>
       <div className={styles.timeline}>
         {experiences.map((exp, index) => (
           <div

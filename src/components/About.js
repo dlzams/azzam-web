@@ -128,11 +128,11 @@ const fullDescription = (
             <h3 className={styles["skills-title"]}>Skills</h3>
             <ul className={styles["skills-list"]}>
               {[
-              "Threat Detection & Incident Response (SIEM Qradar, SOC Operations)",
-              "EDR/XDR (Cortex XDR, CrowdStrike, Cybereason), DLP (Forcepoint), NAC Aruba",
-              "Routing, Switching, OSI 7 Layers, Network Topologies & Devices",
-              "Machine Learning, Deep Learning, Data Analysis & Visualization",
-              "Teamwork, Communication, Time Management",
+              "Threat Detection, Incident Response, Security Monitoring, SOC Operations, Threat Hunting, MITRE ATT&CK",
+              "SIEM QRadar Wazuh, Security Alert Analysis, Event Correlation, Threat Intelligence",
+              "EDR/XDR (CrowdStrike, Cortex XDR), DLP (Forcepoint, Trellix), NAC-Aruba ClearPass",
+              "Endpoint & Server Hardening, Security Policy Enforcement, Linux, Windows, macOS",
+              "Teamwork, Communication, Problem Solving, Time Management",
               "Football ⚽ & Running 🏃",
               ].map((skill, index) => (
                 <li
