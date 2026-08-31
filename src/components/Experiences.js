@@ -9,7 +9,7 @@ const experiences = [
     company: "PT Teknologi Integrasi Informatika (Temika Cyber)",
     date: "August 2026 - Present",
     description: [
-      "Monitor and analyze security events and alerts within SOC operations using platforms including CrowdStrike Falcon Next-Gen SIEM and Wazuh.",
+      "Monitor and analyze security events and alerts within SOC operations using platforms including CrowdStrike Falcon Next-Gen SIEM, Wazuh, other security monitoring tools.",
       "Analyze and correlate security telemetry from multiple sources, including firewalls, EDR/XDR platforms, and other security sensors, to identify potential threats and suspicious activities.",
       "Perform initial alert triage and investigation, including validating alerts, identifying false positives, and assessing the severity and potential impact of security events.",
       "Investigate security incidents and suspicious activities by analyzing event context, timelines, indicators, and related telemetry to support incident response and escalation.",
@@ -18,12 +18,12 @@ const experiences = [
     image: "/temika.png",
   },
   {
-    title: "Endpoint Security Engineer",
+    title: "Endpoint Security Engineer (CISO)",
     company: "PT. Logistik Teknologi Indonesia (Integra) by Lintas Group",
     date: "September 2025 - August 2026",
     description: [
       "Managed Services for PT Bank Negara Indonesia (Persero), Tbk.",
-      "Implemented and maintained endpoint security solutions (EDR, DLP, NAC such as Aruba ClearPass) across diverse platforms including Windows, macOS, and Linux servers to ensure compliance and protection.",
+      "Implemented and maintained enterprise security solutions including EDR (CrowdStrike, Cortex XDR, Trellix), DLP (Trellix, Forcepoint), and NAC (Aruba ClearPass) across Windows, macOS, and Linux environments.",
       "Performed endpoint and server hardening, applying security policies and best practices to strengthen system defenses against threats.",
       "Supported secure connectivity for employees and branch offices by managing network access control and site binding, ensuring endpoints comply with internal banking security standards.",
       "Conducted on-site troubleshooting and remediation for endpoint security issues, coordinating with business units to restore secure access and minimize downtime.",
@@ -31,10 +31,14 @@ const experiences = [
     image: "/mix.png",
   },
   {
-    title: "Technical Consultant",
+    title: "Technical Consultant (Presales)",
     company: "PT. Virtus Technology Indonesia by CTI Group",
     date: "June 2025 - August 2025",
-    description: ["Pre-sales Palo Alto Networks.", "etc."],
+    description: [
+      "Supported pre-sales activities for Palo Alto Networks security solutions.",
+      "Assisted with technical presentations, solution demonstrations, and customer requirements.",
+      "Gained exposure to enterprise cybersecurity solutions and their use cases.",
+    ],
     image: "/virtus.png",
   },
   /*{
@@ -49,15 +53,15 @@ const experiences = [
     image: "/hes.jpg",
   },*/
   {
-    title: "Security Operation Center Intern",
+    title: "Security Operation Center Analyst (Intern)",
     company: "PT. Sigma Cipta Caraka (Telkomsigma) by Telkom Indonesia",
     date: "June 2024 - September 2024",
     description: [
-      "Monitored network traffic for multiple multinational companies, managing cybersecurity to spot unusual activity or threats.",
-      "Detected network anomalies and potential attacks, creating clear incident reports and sharing them with clients to keep them informed.",
-      "Utilized cybersecurity tools such as SIEM, Cybereason, Group-IB Threat Hunting Framework (THF), Qradar, and Stellar to enhance monitoring, threat detection, and incident response processes.",
+      "Monitored network traffic and security events for multiple multinational companies to identify unusual activity and potential threats.",
+      "Detected network anomalies and potential attacks, creating incident reports and communicating findings to clients.",
+      "Utilized cybersecurity tools such as SIEM Qradar, Cybereason, Group-IB Threat Hunting Framework (THF), and Stellar to enhance monitoring, threat detection, and incident response processes.",
       "Built attack flow diagrams to show where attacks started, how they moved, and what they targeted, giving clients a better understanding of security risks.",
-      "Worked closely with the team to monitor and report together, also taking on Level 1 (L1) analyst tasks and covering shift work when extra support was needed.",
+      "Supported L1 analyst activities and shift-based SOC operations.",
     ],
     image: "/telkomsigma.jpg",
   },
