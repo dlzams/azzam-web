@@ -5,7 +5,7 @@ import styles from "../styles/Experiences.module.css";
 
 const experiences = [
     {
-    title: "Security Operation Center Analyst",
+    title: "Security Operations Center Analyst",
     company: "PT Teknologi Integrasi Informatika (Temika Cyber)",
     date: "August 2026 - Present",
     description: [
@@ -53,7 +53,7 @@ const experiences = [
     image: "/hes.jpg",
   },*/
   {
-    title: "Security Operation Center Analyst (Intern)",
+    title: "Security Operations Center Analyst (Intern)",
     company: "PT. Sigma Cipta Caraka (Telkomsigma) by Telkom Indonesia",
     date: "June 2024 - September 2024",
     description: [
