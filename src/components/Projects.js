@@ -76,71 +76,70 @@ const Projects = () => {
     return () => observer.disconnect();
   }, []);
 
-  return (
-    <section id="projects" className={styles.projects}>
-      <h2 className={styles.title}>My Projects</h2>
-      <div className={styles.grid}>
-        {projects.map((project, index) =>
-          project.internalUrl ? (
-            <Link
-              key={index}
-              href={project.internalUrl}
-              legacyBehavior
-              passHref
+return (
+  <section id="projects" className={styles.projects}>
+    <h2 className={styles.title}>My Projects</h2>
+    <div className={styles.grid}>
+      {projects.map((project, index) =>
+        project.internalUrl ? (
+          <Link
+            key={index}
+            href={project.internalUrl}
+            className={styles.cardLink}
+          >
+            <div
+              className={`${styles.card} ${styles.hidden}`}
+              ref={(el) => (cardRefs.current[index] = el)}
             >
-              <a className={styles.cardLink}>
-                <div
-                  className={`${styles.card} ${styles.hidden}`}
-                  ref={(el) => (cardRefs.current[index] = el)}
-                >
-                  <div className={styles.imageContainer}>
-                    <img
-                      src={project.imageUrl}
-                      alt={project.title}
-                      className={styles.image}
-                    />
-                    <div className={styles.overlay}>
-                      <h3 className={styles.projectTitle}>{project.title}</h3>
-                      <p className={styles.description}>
-                        {project.description}
-                      </p>
-                    </div>
-                  </div>
-                  <p className={styles.caption}>{project.caption}</p>
+              <div className={styles.imageContainer}>
+                <img
+                  src={project.imageUrl}
+                  alt={project.title}
+                  className={styles.image}
+                />
+                <div className={styles.overlay}>
+                  <h3 className={styles.projectTitle}>{project.title}</h3>
+                  <p className={styles.description}>
+                    {project.description}
+                  </p>
                 </div>
-              </a>
-            </Link>
-          ) : (
-            <a
-              key={index}
-              href={project.url}
-              target="_blank"
-              rel="noopener noreferrer"
-              className={styles.cardLink}
-            >
-              <div
-                className={`${styles.card} ${styles.hidden}`}
-                ref={(el) => (cardRefs.current[index] = el)}
-              >
-                <div className={styles.imageContainer}>
-                  <img
-                    src={project.imageUrl}
-                    alt={project.title}
-                    className={styles.image}
-                  />
-                  <div className={styles.overlay}>
-                    <h3 className={styles.projectTitle}>{project.title}</h3>
-                    <p className={styles.description}>{project.description}</p>
-                  </div>
-                </div>
-                <p className={styles.caption}>{project.caption}</p>
               </div>
-            </a>
-          )
-        )}
-      </div>
-    </section>
-  );
+              <p className={styles.caption}>{project.caption}</p>
+            </div>
+          </Link>
+        ) : (
+          <a
+            key={index}
+            href={project.url}
+            target="_blank"
+            rel="noopener noreferrer"
+            className={styles.cardLink}
+          >
+            <div
+              className={`${styles.card} ${styles.hidden}`}
+              ref={(el) => (cardRefs.current[index] = el)}
+            >
+              <div className={styles.imageContainer}>
+                <img
+                  src={project.imageUrl}
+                  alt={project.title}
+                  className={styles.image}
+                />
+                <div className={styles.overlay}>
+                  <h3 className={styles.projectTitle}>{project.title}</h3>
+                  <p className={styles.description}>
+                    {project.description}
+                  </p>
+                </div>
+              </div>
+              <p className={styles.caption}>{project.caption}</p>
+            </div>
+          </a>
+        )
+      )}
+    </div>
+  </section>
+);
 };
 
 export default Projects;

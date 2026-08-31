@@ -21,15 +21,13 @@ const Navbar = () => {
   return (
     <nav className={styles.navbar}>
       {/* Logo as Image with Link to Homepage */}
-      <Link href="/" passHref legacyBehavior>
-        <a className={styles.logo}>
-          <Image
-            src="/logo.jpg" // Path ke gambar logo di folder public
-            alt="My Portfolio Logo"
-            width={200} // Sesuaikan lebar logo
-            height={50} // Sesuaikan tinggi logo
-          />
-        </a>
+      <Link href="/" className={styles.logo}>
+      <Image
+        src="/logo.jpg"
+        alt="My Portfolio Logo"
+        width={200}
+        height={50}
+      />
       </Link>
 
       <div className={styles.hamburger} onClick={toggleMenu}>

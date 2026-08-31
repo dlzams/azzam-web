@@ -203,14 +203,42 @@
 
   .title {
     font-size: 2rem;
+    margin-top: -4rem;
   }
 
-  .card {
-    padding: 1rem;
-    margin-left: 0; /* Hapus jarak kiri pada layar kecil */
+  .timeline {
+    max-width: 100%;
+    padding-left: 0;
+    gap: 1.5rem;
   }
 
   .timeline::before {
-    left: 15px; /* Sesuaikan posisi garis untuk layar kecil */
+    left: 10px;
+  }
+
+  .card {
+    margin-left: 1.5rem;
+    padding: 1.25rem;
+    border-radius: 25px;
+  }
+
+  .header {
+    align-items: flex-start;
+  }
+
+  .jobTitle {
+    font-size: 1.25rem;
+    margin-right: 0.5rem;
+  }
+
+  .image {
+    max-width: 100px;
+    max-height: 55px;
+    margin-right: 0;
+  }
+
+  .description {
+    padding-left: 1.25rem;
+    text-align: left;
   }
 }
