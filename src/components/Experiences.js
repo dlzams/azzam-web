@@ -19,7 +19,7 @@ const experiences = [
   },
   {
     title: "Endpoint Security Engineer (CISO)",
-    company: "PT. Logistik Teknologi Indonesia (Integra) by Lintas Group",
+    company: "PT. Logistik Teknologi Indonesia (INTEGRA) by Lintas Teknologi Group",
     date: "September 2025 - August 2026",
     description: [
       "Managed Services for PT Bank Negara Indonesia (Persero), Tbk.",
